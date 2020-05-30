@@ -1,0 +1,52 @@
+{% extends 'Hackathon/base.html' %}
+{% block title %} Signup {% endblock %}
+{% load static %}
+
+{% block css %}
+body {
+  background-color: LightBlue;
+}
+#page-container {
+position: relative;
+min-height: 10vh;
+}
+{% endblock %}
+
+{% block body %}
+    {% if error %}
+    {{error}}
+    <br />
+    <br />
+    {% endif %}
+    <h1>Sign up!</h1>
+    {% csrf_token %}
+    <form method='POST' action = '{% url 'signup' %}'>
+    {% csrf_token %}
+    Name:
+    <br />
+    <input type="text" name="username">
+    <br />
+    Id:
+    <br />
+    <input type="text" name="clgid">
+    <br />
+    Department:
+    <br />
+    <input type="text" name="department">
+    <br />
+    Email Id:
+    <br />
+    <input type="email" name="email">
+    <br />
+    Password:
+    <br />
+    <input type="password" name="password1">
+    <br />
+    Confirm password:
+    <br />
+    <input type="password" name="password2">
+    <br />
+    <br />
+    <input class='btn btn-primary' type='submit' value='Signup' formaction="{% url 'login' %}"/>
+    </form>
+{% endblock %}
