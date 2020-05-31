@@ -1,16 +1,13 @@
 {% extends 'Hackathon/base.html' %}
-{% block title %} Signup {% endblock %}
 {% load static %}
 
-{% block css %}
-body {
-  background-color: LightBlue;
-}
-#page-container {
+{% block title %} Signup {% endblock %}
+{% load static %}
+<!-- #page-container {
 position: relative;
 min-height: 10vh;
-}
-{% endblock %}
+} -->
+
 
 {% block body %}
     {% if error %}
@@ -18,35 +15,54 @@ min-height: 10vh;
     <br />
     <br />
     {% endif %}
-    <h1>Sign up!</h1>
-    {% csrf_token %}
-    <form method='POST' action = '{% url 'signup' %}'>
-    {% csrf_token %}
-    Name:
-    <br />
-    <input type="text" name="username">
-    <br />
-    Id:
-    <br />
-    <input type="text" name="clgid">
-    <br />
-    Department:
-    <br />
-    <input type="text" name="department">
-    <br />
-    Email Id:
-    <br />
-    <input type="email" name="email">
-    <br />
-    Password:
-    <br />
-    <input type="password" name="password1">
-    <br />
-    Confirm password:
-    <br />
-    <input type="password" name="password2">
-    <br />
-    <br />
-    <input class='btn btn-primary' type='submit' value='Signup' formaction="{% url 'login' %}"/>
-    </form>
+    <div class="container">
+      <h1>Sign up!</h1>
+      {% csrf_token %}
+      <form method='POST' action = '{% url 'signup' %}'>
+      {% csrf_token %}
+      Name:
+      <br />
+      <input type="text" name="username">
+      <br />
+      Email Id:
+      <br />
+      <input type="text" name="email">
+      <br />
+      College Name:
+      <br />
+      <input type="text" name="clg">
+      <br />
+      Gender:
+      <br />
+      <label for="gn">I identify my gender as:</label><br>
+      <select name="gen" id="gn">
+       <option value="Female">Female</option>
+      <option value="Male">Male</option>
+      <option value="prefer">Prefer not to disclose</option>
+      </select>
+      <br/>
+      Contact:
+      <br />
+      <input type="text" name="phone">
+      <br />
+      GitHub Profile:
+      <br />
+      <input type="url" name="github">
+      <br />
+      LinkedIn:
+      <br />
+      <input type="url" name="linkedin">
+      <br />
+      Password:
+      <br />
+      <input type="password" name="password1">
+      <br />
+      Confirm password:
+      <br />
+      <input type="password" name="password2">
+      <br />
+      <br />
+      <input class='btn btn-primary' type='submit' value='Signup' formaction="{% url 'login' %}"/>
+      </form>
+    </div>
 {% endblock %}

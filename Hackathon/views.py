@@ -13,8 +13,8 @@ def login(request):
     return render(request, 'Hackathon/login.html' )
 
 
-def login1(request):
-    return render(request, 'Hackathon/login1.html' )
+# def login1(request):
+#     return render(request, 'Hackathon/login1.html' )
 
 
 # def signup(request):

@@ -1,24 +1,26 @@
+<!doctype html>
 <html lang="en">
   <head>
     {% load static %}
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-    <meta name="generator" content="Jekyll v3.8.6">
-    <title>HackOnHack</title>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href = "{% static 'open-iconic/font/css/open-iconic-bootstrap.css' %}">
-    <style>
-      {% block css %} {% endblock %}
- </style>
 
-  </head>
-  <body>
-    <header>
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class='container'>
+    <title>{% block title%} {% endblock %}</title>
+    <style>
+      {% block css %}
+      .navbar {
+        background-color: DarkSlateGray;
+      }
+       {% endblock %}
+</style>
+</head>
+<body>
+      <nav class="navbar navbar-expand-lg navbar-dark ">
+        <a href="{% url 'home1' %}" ><img src="{% static 'Copy of Hackofhack.png' %}" class="logo" width="150px" height="150px"/></a>
+
+        <!-- <img class="logo" src="{% static 'Copy of Hackofhack.png' %}" width="150px" height="150px"> -->
         <a class="navbar-brand" href="{% url 'home1' %}">
         HackOnHack
       </a>
@@ -27,23 +29,23 @@
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <div class="navbar-nav ml-auto">
+          <ul class="navbar-nav ml-auto">
               <a class="nav-link" href="{% url 'signup' %}">Signup</a>
               <a class="nav-link" href="{% url 'login' %}">login</a>
-
+              <!-- <li class="nav-item  {% block contactactive %} {% endblock contactactive %}">
+                <a class="nav-link" href="/shop/contact">Contact <span class="sr-only">(current)</span> </a>
+              </li> -->
           </div>
-        </div>
-        </div>
       </nav>
-</header>
 
-<!-- <main role="main">
-  <div class='container'> -->
+
+<main role="main">
+  <div class='container'>
     {% block content %}
 
     {% endblock %}
-<!-- </div>
-</main> -->
+</div>
+</main>
 
 
   {% block body %}  {% endblock %}

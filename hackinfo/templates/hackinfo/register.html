@@ -1,3 +1,104 @@
 {% extends 'hackinfo/basic.html' %}
 {% block title %} register {% endblock %}
 {% load static %}
+{% block body %}
+
+
+
+<h4>Step 1: Register your team</h4>
+<div class="container">
+ <div id="formdiv">
+     <form id="register">
+         <div class="team">
+             <div class="row">
+                 <div class="col-md-auto">
+                    <label for="tn">Team Name:</label><br>
+                    <input class="t1" type="text" id="tn" name="t1" action="" method="post">
+                 </div>
+            </div>
+         </div>
+         <div class="leader">
+             <br>
+        <h4>Team Leader details:</h4>
+            <div class="row">
+            <div class="col-md-auto">
+                <label for="fn">First Name:</label><br>
+                <input class="in1" type="text" id="fn" name="f1" action="" method="post">
+            </div>
+            <div class="col-md-auto">
+                <label for="ln">Last Name:</label><br>
+                <input class="in2" type="text" id="ln" name="f2" action="" method="post">
+            </div>
+            <div class="col-md-auto">
+                <label for="gn">I identify my gender as:</label><br>
+
+                <select name="gen" id="gn">
+                 <option value="Female">Female</option>
+                <option value="Male">Male</option>
+                <option value="prefer">Prefer not to disclose</option>
+
+                </select>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-auto">
+                <label for="ea">Email Address:</label><br>
+                <input class="in3" type="email" id="ea" name="f3" action="" method="post"><br>
+            </div>
+            <div class="col-md-auto">
+                <label for="pn">Contact No:</label><br>
+                <input class="in4" type="text" id="pn" name="f4" action="" method="post"><br>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-auto">
+                <label for="co">College:</label><br>
+                <input class="in5" type="text" id="co" name="f5" action="" method="post"><br>
+            </div>
+            <div class="col-md-auto">
+                <label for="yr">Year of study:</label><br>
+                <input class="in6" type="text" id="yr" name="f6" action="" method="post"><br>
+            </div>
+            <div class="col-md-auto">
+                <label for="bc">Branch:</label><br>
+                <input class="in7" type="text" id="bc" name="f7" action="" method="post"><br>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-auto">
+                <label for="gh">Github Profile(Link)</label><br>
+                <input class="in8" type="url" id="gh" name="f8" action="" method="post"><br>
+            </div>
+            <div class="col-md-auto">
+                <label for="ld">LinkedIn Profile(Link)</label><br>
+                <input class="in9" type="url" id="ld" name="f9" action="" method="post"><br>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-auto">
+
+               <input type="checkbox" name="tr" value="TR">
+               <label for="tr">Want travel reimbursement?</label><br>
+           </div>
+
+        </div>
+
+        </div>
+
+
+
+
+             <br>
+             <input type="submit" value="Continue" class="bt" formaction='{% url 'register1' %}'>
+
+
+
+
+     </form>
+
+ </div>
+</div>
+
+
+
+{% endblock %}

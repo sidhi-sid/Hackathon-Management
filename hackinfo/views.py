@@ -9,6 +9,9 @@ def homepage(request):
 def register(request):
     return render(request, 'hackinfo/register.html' )
 
+def register1(request):
+    return render(request, 'hackinfo/register1.html' )
+
 def track(request):
     return render(request, 'hackinfo/track.html' )
 

@@ -11,15 +11,23 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href = "{% static 'open-iconic/font/css/open-iconic-bootstrap.css' %}">
     <style>
-      {% block css %} {% endblock %}
+      {% block css %}
+
+      .navbar {
+        background-color: DarkSlateGray;
+      }
+      {% endblock %}
  </style>
 
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <nav class="navbar navbar-expand-lg navbar-dark ">
         <div class='container'>
-        <a class="navbar-brand" href="{% url 'home1' %}">
+          <a href="{% url 'homepage' %}" ><img src="{% static 'Copy of Hackofhack.png' %}" class="logo" width="150px" height="150px"/></a>
+
+          <!-- <img class="logo" src="{% static 'Copy of Hackofhack.png' %}" width="150px" height="150px"> -->
+        <a class="navbar-brand" href="{% url 'homepage' %}">
         HackOnHack
       </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -42,7 +50,7 @@
 <main role="main">
   <div class='container'>
     {% block body %}
-      <h1>HOME</h1>
+      <!-- <h1>HOME</h1> -->
     {% endblock %}
     </div>
   </div>
