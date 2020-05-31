@@ -2,7 +2,7 @@
 {% extends 'Hackathon/base.html' %}
 {% load static %}
 
-{% block title %} Login {% endblock %} 
+{% block title %} Login {% endblock %}
 {% load static %}
 {% block body %}
 
@@ -21,7 +21,7 @@
                    <input class="in2" type="text" id="pass" name="login2" action="" method="post"><br>
                 </div>
                 <br>
-                <input type="submit" value="Log In" class="bt" formaction='{% url 'homepage' %}'>
+                <input type="submit" value="Log In" class="bt" formaction='{% url 'register' %}'>
         </form>
     </div>
 </div>
@@ -29,6 +29,9 @@
 
 
  {% block css %}
+ .navbar {
+   background-color: DarkSlateGray;
+ }
 
 a{
     width:300px;

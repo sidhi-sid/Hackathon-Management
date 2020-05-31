@@ -14,7 +14,7 @@ urlpatterns = [
     path('logout', views.logout, name='logout'),
     path('book', views.book, name='book'),
 
-    path('homepage/', include('hackinfo.urls')),
+    path('register/', include('hackinfo.urls')),
     # path('blog/', include('blog.urls')),
 
 

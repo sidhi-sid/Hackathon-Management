@@ -3,7 +3,7 @@ a{
     height:100px;
     background-color:transparent;
     font-size: 20px;
-    
+
 }
 a:hover{
     color:lightsteelblue;
@@ -33,12 +33,12 @@ a{
 h5{
     font-style: normal;
     text-align: center;
-    
+
 }
 .in1,.in2{
     width: 350px;
     margin-bottom:5px;
-    
+
 }
 .logo{
     margin-left: 40px;
