@@ -1,4 +1,4 @@
-@media screen and (max-width: 1060px) {
+@media screen and (max-width: 1060px) { /*for making page responsive*/
     #primary { width:67%; }
     #secondary { width:30%; margin-left:3%;}  
 }
