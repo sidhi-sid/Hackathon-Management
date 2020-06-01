@@ -1,0 +1,424 @@
+{% extends 'hackinfo2/basic.html' %}
+{% block title %} register {% endblock %}
+{% load static %}
+{% block body %}
+
+
+<div class="container">
+  <div id="formdiv">
+      <form id="register" action="{% url 'userdashboard' %}">
+
+          <div class="mem1">
+              <br>
+         <h4>Team Member details:</h4>
+             <h6>Team Member 1:</h6>
+             <div class="row">
+             <div class="col-md-auto">
+                 <label for="fn">First Name:</label><br>
+                 <input class="in1" type="text" id="fn" name="f1" action="" method="post">
+             </div>
+             <div class="col-md-auto">
+                 <label for="ln">Last Name:</label><br>
+                 <input class="in2" type="text" id="ln" name="f2" action="" method="post">
+             </div>
+             <div class="col-md-auto">
+                 <label for="gn">I identify my gender as:</label><br>
+
+                 <select name="gen" id="gn">
+                  <option value="Female">Female</option>
+                 <option value="Male">Male</option>
+                 <option value="prefer">Prefer not to disclose</option>
+
+                 </select>
+             </div>
+         </div>
+         <div class="row">
+             <div class="col-md-auto">
+                 <label for="ea">Email Address:</label><br>
+                 <input class="in3" type="email" id="ea" name="f3" action="" method="post"><br>
+             </div>
+             <div class="col-md-auto">
+                 <label for="pn">Contact No:</label><br>
+                 <input class="in4" type="text" id="pn" name="f4" action="" method="post"><br>
+             </div>
+         </div>
+         <div class="row">
+             <div class="col-md-auto">
+                 <label for="co">College:</label><br>
+                 <input class="in5" type="text" id="co" name="f5" action="" method="post"><br>
+             </div>
+             <div class="col-md-auto">
+                 <label for="yr">Year of study:</label><br>
+                 <input class="in6" type="text" id="yr" name="f6" action="" method="post"><br>
+             </div>
+             <div class="col-md-auto">
+                 <label for="bc">Branch:</label><br>
+                 <input class="in7" type="text" id="bc" name="f7" action="" method="post"><br>
+             </div>
+         </div>
+         <div class="row">
+             <div class="col-md-auto">
+                 <label for="gh">Github Profile(Link)</label><br>
+                 <input class="in8" type="url" id="gh" name="f8" action="" method="post"><br>
+             </div>
+             <div class="col-md-auto">
+                 <label for="ld">LinkedIn Profile(Link)</label><br>
+                 <input class="in9" type="url" id="ld" name="f9" action="" method="post"><br>
+             </div>
+         </div>
+      </form>
+  </div>
+</div>
+<br>
+<div class="container">
+ <div id="formdiv">
+     <form id="register">
+
+         <div class="mem2">
+             <br>
+        <h4>Team Member details:</h4>
+            <h6>Team Member 2:</h6>
+            <div class="row">
+            <div class="col-md-auto">
+                <label for="fn">First Name:</label><br>
+                <input class="in1" type="text" id="fn" name="f1" action="" method="post">
+            </div>
+            <div class="col-md-auto">
+                <label for="ln">Last Name:</label><br>
+                <input class="in2" type="text" id="ln" name="f2" action="" method="post">
+            </div>
+            <div class="col-md-auto">
+                <label for="gn">I identify my gender as:</label><br>
+
+                <select name="gen" id="gn">
+                 <option value="Female">Female</option>
+                <option value="Male">Male</option>
+                <option value="prefer">Prefer not to disclose</option>
+
+                </select>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-auto">
+                <label for="ea">Email Address:</label><br>
+                <input class="in3" type="email" id="ea" name="f3" action="" method="post"><br>
+            </div>
+            <div class="col-md-auto">
+                <label for="pn">Contact No:</label><br>
+                <input class="in4" type="text" id="pn" name="f4" action="" method="post"><br>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-auto">
+                <label for="co">College:</label><br>
+                <input class="in5" type="text" id="co" name="f5" action="" method="post"><br>
+            </div>
+            <div class="col-md-auto">
+                <label for="yr">Year of study:</label><br>
+                <input class="in6" type="text" id="yr" name="f6" action="" method="post"><br>
+            </div>
+            <div class="col-md-auto">
+                <label for="bc">Branch:</label><br>
+                <input class="in7" type="text" id="bc" name="f7" action="" method="post"><br>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-auto">
+                <label for="gh">Github Profile(Link)</label><br>
+                <input class="in8" type="url" id="gh" name="f8" action="" method="post"><br>
+            </div>
+            <div class="col-md-auto">
+                <label for="ld">LinkedIn Profile(Link)</label><br>
+                <input class="in9" type="url" id="ld" name="f9" action="" method="post"><br>
+            </div>
+        </div>
+        </div>
+     </form>
+
+ </div>
+</div>
+<br>
+<div class="container">
+ <div id="formdiv">
+     <form id="register">
+
+         <div class="mem3">
+             <br>
+        <h4>Team Member details:</h4>
+            <h6>Team Member 3:</h6>
+            <div class="row">
+            <div class="col-md-auto">
+                <label for="fn">First Name:</label><br>
+                <input class="in1" type="text" id="fn" name="f1" action="" method="post">
+            </div>
+            <div class="col-md-auto">
+                <label for="ln">Last Name:</label><br>
+                <input class="in2" type="text" id="ln" name="f2" action="" method="post">
+            </div>
+            <div class="col-md-auto">
+                <label for="gn">I identify my gender as:</label><br>
+
+                <select name="gen" id="gn">
+                 <option value="Female">Female</option>
+                <option value="Male">Male</option>
+                <option value="prefer">Prefer not to disclose</option>
+
+                </select>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-auto">
+                <label for="ea">Email Address:</label><br>
+                <input class="in3" type="email" id="ea" name="f3" action="" method="post"><br>
+            </div>
+            <div class="col-md-auto">
+                <label for="pn">Contact No:</label><br>
+                <input class="in4" type="text" id="pn" name="f4" action="" method="post"><br>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-auto">
+                <label for="co">College:</label><br>
+                <input class="in5" type="text" id="co" name="f5" action="" method="post"><br>
+            </div>
+            <div class="col-md-auto">
+                <label for="yr">Year of study:</label><br>
+                <input class="in6" type="text" id="yr" name="f6" action="" method="post"><br>
+            </div>
+            <div class="col-md-auto">
+                <label for="bc">Branch:</label><br>
+                <input class="in7" type="text" id="bc" name="f7" action="" method="post"><br>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-auto">
+                <label for="gh">Github Profile(Link)</label><br>
+                <input class="in8" type="url" id="gh" name="f8" action="" method="post"><br>
+            </div>
+            <div class="col-md-auto">
+                <label for="ld">LinkedIn Profile(Link)</label><br>
+                <input class="in9" type="url" id="ld" name="f9" action="" method="post"><br>
+            </div>
+        </div>
+
+
+        </div>
+
+     </form>
+
+ </div>
+</div>
+<br>
+<div class="container">
+ <div id="formdiv">
+     <form id="register">
+
+         <div class="mem4">
+             <br>
+        <h4>Team Member details:</h4>
+            <h6>Team Member 4:</h6>
+            <div class="row">
+            <div class="col-md-auto">
+                <label for="fn">First Name:</label><br>
+                <input class="in1" type="text" id="fn" name="f1" action="" method="post">
+            </div>
+            <div class="col-md-auto">
+                <label for="ln">Last Name:</label><br>
+                <input class="in2" type="text" id="ln" name="f2" action="" method="post">
+            </div>
+            <div class="col-md-auto">
+                <label for="gn">I identify my gender as:</label><br>
+
+                <select name="gen" id="gn">
+                 <option value="Female">Female</option>
+                <option value="Male">Male</option>
+                <option value="prefer">Prefer not to disclose</option>
+
+                </select>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-auto">
+                <label for="ea">Email Address:</label><br>
+                <input class="in3" type="email" id="ea" name="f3" action="" method="post"><br>
+            </div>
+            <div class="col-md-auto">
+                <label for="pn">Contact No:</label><br>
+                <input class="in4" type="text" id="pn" name="f4" action="" method="post"><br>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-auto">
+                <label for="co">College:</label><br>
+                <input class="in5" type="text" id="co" name="f5" action="" method="post"><br>
+            </div>
+            <div class="col-md-auto">
+                <label for="yr">Year of study:</label><br>
+                <input class="in6" type="text" id="yr" name="f6" action="" method="post"><br>
+            </div>
+            <div class="col-md-auto">
+                <label for="bc">Branch:</label><br>
+                <input class="in7" type="text" id="bc" name="f7" action="" method="post"><br>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-auto">
+                <label for="gh">Github Profile(Link)</label><br>
+                <input class="in8" type="url" id="gh" name="f8" action="" method="post"><br>
+            </div>
+            <div class="col-md-auto">
+                <label for="ld">LinkedIn Profile(Link)</label><br>
+                <input class="in9" type="url" id="ld" name="f9" action="" method="post"><br>
+            </div>
+        </div>
+
+
+        </div>
+
+     </form>
+
+ </div>
+</div>
+<br>
+<div class="container">
+ <div id="formdiv">
+     <form id="register">
+
+         <div class="mem5">
+             <br>
+        <h4>Team Member details:</h4>
+            <h6>Team Member 5:</h6>
+            <div class="row">
+            <div class="col-md-auto">
+                <label for="fn">First Name:</label><br>
+                <input class="in1" type="text" id="fn" name="f1" action="" method="post">
+            </div>
+            <div class="col-md-auto">
+                <label for="ln">Last Name:</label><br>
+                <input class="in2" type="text" id="ln" name="f2" action="" method="post">
+            </div>
+            <div class="col-md-auto">
+                <label for="gn">I identify my gender as:</label><br>
+
+                <select name="gen" id="gn">
+                 <option value="Female">Female</option>
+                <option value="Male">Male</option>
+                <option value="prefer">Prefer not to disclose</option>
+
+                </select>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-auto">
+                <label for="ea">Email Address:</label><br>
+                <input class="in3" type="email" id="ea" name="f3" action="" method="post"><br>
+            </div>
+            <div class="col-md-auto">
+                <label for="pn">Contact No:</label><br>
+                <input class="in4" type="text" id="pn" name="f4" action="" method="post"><br>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-auto">
+                <label for="co">College:</label><br>
+                <input class="in5" type="text" id="co" name="f5" action="" method="post"><br>
+            </div>
+            <div class="col-md-auto">
+                <label for="yr">Year of study:</label><br>
+                <input class="in6" type="text" id="yr" name="f6" action="" method="post"><br>
+            </div>
+            <div class="col-md-auto">
+                <label for="bc">Branch:</label><br>
+                <input class="in7" type="text" id="bc" name="f7" action="" method="post"><br>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-auto">
+                <label for="gh">Github Profile(Link)</label><br>
+                <input class="in8" type="url" id="gh" name="f8" action="" method="post"><br>
+            </div>
+            <div class="col-md-auto">
+                <label for="ld">LinkedIn Profile(Link)</label><br>
+                <input class="in9" type="url" id="ld" name="f9" action="" method="post"><br>
+            </div>
+        </div>
+
+
+        </div>
+             <br>
+             <input type="submit" value="Submit" class="bt" formaction="{% url 'userdashboard' %}">
+     </form>
+    <br>
+ </div>
+</div>
+
+{% endblock %}
+
+{% block css %}
+.navbar {
+  background-color: DarkSlateGray;
+}
+
+body{
+    background-color:#2c2c2c;
+}
+.container{
+
+   width: max-content;
+   color:#f5587b;
+
+}
+.mem1,.mem2,.mem3,.mem4,.mem5{
+
+    padding: 20px;
+    background: rgba(181, 187, 181, 0.2)
+}
+.mem1{
+    margin-left: 15px;
+    margin-right:20px;
+}
+h4{
+   margin-top:-120px;
+   margin-bottom: 80px;
+   text-align: center;
+    color:#e41749;
+}
+h6{
+    margin-top: -20px;
+    color:#e41749;
+   font-size: 20px;
+}
+.t1{
+    width:250px;
+}
+.in1,.in2{
+    width:250px;
+}
+select{
+    width:220px;
+}
+.in3,.in8{
+    width:400px;
+}
+.in4{
+    width:300px;
+}
+.in5{
+   width:400px;
+}
+.in6,.in7{
+    width:160px;
+}
+.in9{
+    width:370px;
+}
+.bt{
+    width:150px;
+    background-color:#f68787;
+    margin-left:350px;
+}
+.logo{
+    margin-left:450px;
+}
+
+{% endblock %}

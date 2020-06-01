@@ -6,22 +6,32 @@
 {% load static %}
 {% block body %}
 
+{% if error %}
+{{error}}
+<br />
+<br />
+{% endif %}
+
 <div class="container">
     <div id="formdiv">
        <a href="#"><span><img src="{% static 'google.png' %}" height="40px" width="40px"></span>Sign in with Google</a>
         <h5>---------or----------</h5>
-          <form method='POST' id="login" formaction='{% url 'register' %}'>
+          <form method='POST' id="login" formaction='{% url 'organiserdashboard' %}'>
           {% csrf_token %}
                <div class="g1">
                    <label for="ea">Email Address:</label><br>
                    <input class="in1" type="email" id="ea" name="username" action="" method="post"><br>
+               </div>
+               <div class="g3">
+                   <label for="ea">Code:</label><br>
+                   <input class="in3" type="text" id="ea" name="code" action="" method="post"><br>
                </div>
                 <div  class="g2">
                    <label for="pass">Password:</label><br>
                    <input class="in2" type="password" id="pass" name="password" action="" method="post"><br>
                 </div>
                 <br>
-                <input type="submit" value="Log In" class="bt" formaction='{% url 'register' %}'>
+                <input type="submit" value="Log In" class="bt" >
         </form>
     </div>
 </div>
@@ -68,7 +78,7 @@ h5{
     font-style: normal;
     text-align: center;
 }
-.in1,.in2{
+.in1,.in2, .in3{
     width: 350px;
     margin-bottom:5px;
 }
