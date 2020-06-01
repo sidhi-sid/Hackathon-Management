@@ -16,6 +16,7 @@ def register(request):
 def tracker(request):
     return render(request, 'hackinfo2/tracker.html' )
 
+
 # def register(request):
 #     if request.method == 'POST':
 #         if request.POST['teamname1'] and request.POST['firstname1'] and request.POST['lastname1'] and request.POST['gender1'] and request.POST['email1'] and request.POST['contact1'] and request.POST['college1'] and request.POST['yearofstudy1'] and request.POST['branch1'] and request.POST['github1'] and request.POST['linkedin1'] :

@@ -34,7 +34,7 @@ body{
 }
 .query{
     margin-left:950px;
-    margin-top:-750px;
+    margin-top:-760px;
     width:320px;
     background: rgba(181, 187, 181, 0.2);
     color:#00d1ff;
@@ -51,11 +51,16 @@ body{
     width:50px;
     font-weight: bold;
 }
+.bt2{
+    width:70px;
+    font-weight: bold;
+    margin-left:110px;
+}
 .query h4{
     text-align: center;
 }
 .otp{
-    margin-top:40px;
+    margin-top:20px;
     margin-left: 950px;
     width:max-content;
     background: rgba(181, 187, 181, 0.2);
@@ -69,7 +74,7 @@ body{
     text-align:center;
 }
 .follow{
-    margin-top:30px;
+    margin-top:20px;
     margin-left: 950px;
     width:320px;
     background: rgba(181, 187, 181, 0.2);
@@ -79,3 +84,18 @@ body{
 .follow img{
     margin-right: 5px;
 }
+<<<<<<< HEAD
+=======
+.main{
+    margin-left: 430px;
+    margin-top: -550px;
+    margin-right:400px;
+}
+.main h3{
+    margin-top: 70px;
+}
+.pr{
+    background: rgba(181, 187, 181, 0.2);
+    padding: 20px;
+}
+>>>>>>> 2f8997e894f4eace051ffee0eec1861f719c334e
