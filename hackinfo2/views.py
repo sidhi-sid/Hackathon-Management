@@ -22,6 +22,8 @@ def travel(request):
 def project(request):
     return render(request, 'hackinfo2/project.html' )
 
+def announce(request):
+    return render(request, 'hackinfo2/announce.html' )
 
 # def register(request):
 #     if request.method == 'POST':

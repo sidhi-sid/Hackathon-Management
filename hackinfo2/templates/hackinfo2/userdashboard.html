@@ -17,7 +17,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-auto">
-                    <a href="#" class="one"><h4>Announcements</h4></a>
+                    <a href="{% url 'announce' %}" class="one"><h4>Announcements</h4></a>
                 </div>
                 <div class="col-sm-auto">
                     <a href="{% url 'tracker' %}"><h4>Status</h4></a>
@@ -32,6 +32,7 @@
                     <a href="#"><h4>Team Details</h4></a>
                 </div>
                 <div class="col-sm-auto">
+                  <!-- <input class="btn" src="{% url 'home1' %}"> -->
                     <a href="{% url 'home1' %}"><h4>SIGN OUT</h4></a>
                 </div>
             </div>
@@ -96,7 +97,7 @@
     <div class="main">
         <div class="container">
             <div class="row">
-        <img src="hack1.png">
+        <img src="{% static 'hack1.jpg' %}">
         <p>By HackofHack we bring together people with different outlook and solutions for already existing problems using technology and design. You will work together with your teams to envision and develop the technology of tomorrow for solving the problems of today.
         </p>
 
