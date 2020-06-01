@@ -16,6 +16,12 @@ def register(request):
 def tracker(request):
     return render(request, 'hackinfo2/tracker.html' )
 
+def travel(request):
+    return render(request, 'hackinfo2/travel.html' )
+
+def project(request):
+    return render(request, 'hackinfo2/project.html' )
+
 
 # def register(request):
 #     if request.method == 'POST':
