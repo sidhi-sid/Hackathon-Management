@@ -19,7 +19,9 @@ body{
     
 }
 .nav a:hover{
-    style:none;
+    text-decoration: none;
+    
+    font-style: italic;
 }
 .bt{
    position: absolute;
