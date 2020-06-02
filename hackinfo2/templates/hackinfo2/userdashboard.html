@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
   <head>
-    {% load static %}
     <title>DashBoard</title>
 
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="HandheldFriendly" content="true">
     <!-- Bootstrap -->
+    {% load static %}
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" media="screen">
     <link href="p-dashboard.css" rel="stylesheet">
   </head>
@@ -17,22 +17,23 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-auto">
-                    <a href="#" class="one"><h4>Announcements</h4></a>
+                    <a href="{% url 'announce' %}" class="one"><h4>Announcements</h4></a>
                 </div>
                 <div class="col-sm-auto">
                     <a href="{% url 'tracker' %}"><h4>Status</h4></a>
                 </div>
                 <div class="col-sm-auto">
-                    <a href="#"><h4>    Travel reimbursement</h4></a>
+                    <a href="{% url 'travel' %}"><h4>Travel reimbursement</h4></a>
                 </div>
                 <div class="col-sm-auto">
-                    <a href="#"><h4>Project</h4></a>
+                    <a href="{% url 'project' %}"><h4>Project</h4></a>
                 </div>
                 <div class="col-sm-auto">
-                    <a href="#"><h4>Team Details</h4></a>
+                    <a href="{% url 'teamdetails' %}"><h4>Team Details</h4></a>
                 </div>
                 <div class="col-sm-auto">
-                    <a href="{% url 'home1' %}"><input type="button" value="SIGN OUT" class="bt">
+                  <!-- <input class="btn" src="{% url 'home1' %}"> -->
+                    <a href="{% url 'home1' %}"><h4>SIGN OUT</h4></a>
                 </div>
             </div>
         </div>
@@ -42,21 +43,26 @@
     <div class="time">
         <img src="{% static 'timeline2.png' %}" height="800px" >
     </div>
+
     <div class="container">
         <form class="query">
             <h4>Drop your queries!</h4>
             <div class="g1">
                 <label for="ea">Email Address:</label><br>
                 <input class="in1" type="email" id="ea" name="login1" action="" method="post"><br>
+
             </div>
+
+
              <div  class="g2">
                 <label for="qu">Your query:</label><br>
                 <input class="in2" type="text" id="qu" name="login2" action="" method="post"><br>
              </div>
              <br>
                  <input type="submit" value="ASK" class="bt1">
-              </div>
-        </form>
+
+        </div>
+    </form>
     </div>
 </div>
         <div class="container">
@@ -67,8 +73,10 @@
                     <h6>Note: To mark the presence at the campus, enter OTP.</h6>
 
                     <input class="in3" type="text" id="no" name="login3" action="" method="post"><br>
-
                 </div>
+                <br>
+                    <input type="submit" value="ENTER" class="bt2">
+
             </form>
         </div>
 
@@ -80,11 +88,23 @@
             <h5>Follow us on:</h5>
             <a href="#"><img src="{% static 'tweet.png' %}" width="25px" height="25px"></a>
             <a href="#"><img src="{% static 'ld.png' %}" width="25px" height="25px"></a>
-            <a href="#"><img src="{% static 'fb.png' %}" width="25px'  height="25px"></a>
+            <a href="#"><img src="{% static 'fb.png' %}" width="25px" height="25px"></a>
 
-            <a href="#"><img src="insta.png" width="25px" height="25px"></a>
+            <a href="#"><img src="{% static 'insta.png' %}" width="25px" height="25px"></a>
          </div>
      </div>
+    </div>
+    <div class="main">
+        <div class="container">
+            <div class="row">
+        <img src="{% static 'hack1.jpg' %}">
+        <p>By HackofHack we bring together people with different outlook and solutions for already existing problems using technology and design. You will work together with your teams to envision and develop the technology of tomorrow for solving the problems of today.
+        </p>
+
+
+        </div>
+        </div>
+
     </div>
 
 
@@ -93,86 +113,138 @@
 </html>
 
 <style>
-  body{
-      background-color:#2c2c2c;
-      color:white;
-  }
+@media screen and (max-width: 1060px) {
+    #primary { width:67%; }
+    #secondary { width:30%; margin-left:3%;}
+}
+
+/* Media Queries: Tabled Portrait */
+@media screen and (max-width: 768px) {
+    #primary { width:100%; }
+    #secondary { width:100%; margin:0; border:none; }
+}
+img { max-width: 100%; height: auto; }
+@media (min-device-width:600px) {
+    img[data-src-600px] {
+        content: attr(data-src-600px, url);
+    }
+}
+
+@media (min-device-width:800px) {
+    img[data-src-800px] {
+        content: attr(data-src-800px, url);
+    }
+}
+body{
+    background-color:#2c2c2c;
+    color:white;
+}
 
 
-  .time{
-      margin-left:100px;
-  }
-  .nav{
-      height:100px;
-      background: rgba(147, 131, 207, 0.2)
-  }
-  .nav h4{
-      margin-top:30px;
-      color:#ff3e6d;
-      margin-left:30px;
+.time{
+    margin-left:100px;
+}
+.nav{
+    height:100px;
+    background: rgba(147, 131, 207, 0.2)
+}
+.nav h4{
+    margin-top:30px;
+    color:#ff3e6d;
+    margin-left:30px;
 
 
-  }
-  .nav a:hover{
-      style:none;
-  }
-  .bt{
-     position: absolute;
-     top:30px;
-     right:-200px;
-      height:40px;
-      width:100px;
-      background-color: cornsilk;
-      color:#032d3c;
-      font-weight: bold;
-      font-size:large;
-  }
-  .query{
-      margin-left:950px;
-      margin-top:-750px;
-      width:320px;
-      background: rgba(181, 187, 181, 0.2);
-      color:#00d1ff;
-      padding: 10px;
-  }
-  .in1,.in2,.in3{
-      width:300px;
-  }
-  .in2{
-      height:120px;
+}
+.nav a:hover{
+    text-decoration: none;
 
-  }
-  .bt1{
-      width:50px;
-      font-weight: bold;
-  }
-  .query h4{
-      text-align: center;
-  }
-  .otp{
-      margin-top:40px;
-      margin-left: 950px;
-      width:max-content;
-      background: rgba(181, 187, 181, 0.2);
-      color:#ef5b50;
-      padding: 10px;
-  }
-  .otp h6{
-      font-size: 12px;
-  }
-  .otp h4{
-      text-align:center;
-  }
-  .follow{
-      margin-top:30px;
-      margin-left: 950px;
-      width:320px;
-      background: rgba(181, 187, 181, 0.2);
-      color:#ef5b50;
-      padding: 20px;
-  }
-  .follow img{
-      margin-right: 5px;
-  }
+    font-style: italic;
+}
+.bt{
+   position: absolute;
+   top:30px;
+   right:-200px;
+    height:40px;
+    width:100px;
+    background-color: cornsilk;
+    color:#032d3c;
+    font-weight: bold;
+    font-size:large;
+}
+.query{
+    margin-left:950px;
+    margin-top:-760px;
+    width:320px;
+    background: rgba(181, 187, 181, 0.2);
+    color:#00d1ff;
+    padding: 10px;
+}
+.in1,.in2,.in3{
+    width:300px;
+}
+.in2{
+    height:120px;
+
+}
+.bt1{
+    width:50px;
+    font-weight: bold;
+}
+.bt2{
+    width:70px;
+    font-weight: bold;
+    margin-left:110px;
+}
+.query h4{
+    text-align: center;
+}
+.otp{
+    margin-top:20px;
+    margin-left: 950px;
+    width:max-content;
+    background: rgba(181, 187, 181, 0.2);
+    color:#ef5b50;
+    padding: 10px;
+}
+.otp h6{
+    font-size: 12px;
+}
+.otp h4{
+    text-align:center;
+}
+.follow{
+    margin-top:20px;
+    margin-left: 950px;
+    width:320px;
+    background: rgba(181, 187, 181, 0.2);
+    color:#ef5b50;
+    padding: 20px;
+}
+.follow img{
+    margin-right: 5px;
+}
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 351fa25c9620c9608a3662b6224f577fff17976e
+.main{
+    margin-left: 430px;
+    margin-top: -550px;
+    margin-right:400px;
+}
+.main h3{
+    margin-top: 70px;
+}
+.pr{
+    background: rgba(181, 187, 181, 0.2);
+    padding: 20px;
+}
+<<<<<<< HEAD
+>>>>>>> 2f8997e894f4eace051ffee0eec1861f719c334e
+=======
+=======
+>>>>>>> 1004008b8f9888fbdd7723db68c1a26dd6e2a955
+>>>>>>> 351fa25c9620c9608a3662b6224f577fff17976e
 
 </style>

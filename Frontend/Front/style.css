@@ -106,7 +106,7 @@ li {
     filter: blur(30px);
 }
  
- 
+ /*------------------------ ScrollBar ------------------------*/
 /*------------------------ 2 Home ------------------------*/
 
 body {
@@ -267,6 +267,33 @@ body:after {
         transform:translateY(-100%);
     }
 }
+.organiser a 
+{
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%,-50%);
+    color: #1670f0;
+    padding: 15px 30px;
+    font-size: 15px;
+    letter-spacing: 2px;
+    text-transform: uppercase;;
+    text-decoration: none;
+    box-shadow: 0px 20px 50px rgba(0,0,0,.5);
+    overflow: hidden;
+}
+.organiser a:before
+{
+    content: '';
+    position: relative;
+    top: 2px;
+    left: 2px;
+    bottom: 2px;
+    width: 50%;
+    background: rgba(255,255,255,0.05);
+}
+
+/*------------------------ 2 Home ------------------------*/
 /*------------------------ 2.1 Full Menu ------------------------*/
 
 .full-menu {
@@ -390,6 +417,7 @@ body:after {
         transform: translateY(-50%) translateX(-98%);
     }
 }
+/*------------------------ 2.1 Full Menu ------------------------*/
 /*------------------------ 2.2 Header ------------------------*/
 
 .full-menu .fullmenu-content {
@@ -565,6 +593,7 @@ header {
 .nav-icon:hover span:nth-child(3) {
     width: 100%;
 }
+/*------------------------ 2.2 Header ------------------------*/
 /*-------------Themes----------------*/
 .theme h1
 {
@@ -666,6 +695,7 @@ header {
     margin: 10px 0 0;
     padding: 0;
 }
+/*------------------------ Themes ------------------------*/
 /*-----------------Schedule-----------*/
 .schedule
 {
@@ -800,6 +830,7 @@ header {
     color: #fff;
     border-color: #e91e63;
 }
+/*------------------------ Schedule ------------------------*/
 /*------------ABOUT Start-------------*/
 .end 
 {
@@ -921,6 +952,8 @@ header {
     font-weight: 200;
     letter-spacing: 2px;
 }
+/*------------------------ About end ------------------------*/
+/*------------------------ Glimpse ------------------------*/
 .glimpse h1
 {
     font-size: 24px;
@@ -1012,6 +1045,8 @@ header {
     color: #777;
     text-transform: uppercase;
 }
+/*------------------------ Glimpse ------------------------*/
+/*------------------------ Sponsor ------------------------*/
 .sponsor body 
 {
     display: flex;
@@ -1158,6 +1193,8 @@ header {
 {
     color:#fff;
 }
+/*------------------------ Sponsor ------------------------*/
+/*------------------------ FAQ ------------------------*/
 .FAQ
 {
     
@@ -1247,6 +1284,8 @@ header {
 {
     display: block;
 }
+/*------------------------ FAQ ------------------------*/
+/*------------------------ Footer ------------------------*/
 footer {
     background: rgba(0, 0, 0, 0.815);
     overflow-x: hidden;
@@ -1283,3 +1322,4 @@ footer .column i {
     padding-top: 3%;
     bottom: 0%;
 }
+/*------------------------ Footer ------------------------*/

@@ -12,32 +12,30 @@
     <link href="p-dashboard.css" rel="stylesheet">
   </head>
   <body>
-    <header>
-        <div class="nav">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-auto">
-                    <a href="#" class="one"><h4>Announcements</h4></a>
-                </div>
-                <div class="col-sm-auto">
-                    <a href="{% url 'tracker' %}"><h4>Status</h4></a>
-                </div>
-                <div class="col-sm-auto">
-                    <a href="#"><h4>    Travel reimbursement</h4></a>
-                </div>
-                <div class="col-sm-auto">
-                    <a href="#"><h4>Project</h4></a>
-                </div>
-                <div class="col-sm-auto">
-                    <a href="#"><h4>Team Details</h4></a>
-                </div>
-                <div class="col-sm-auto">
-                    <a href="{% url 'home1' %}"><input type="button" value="SIGN OUT" class="bt">
-                </div>
+    <div class="nav">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-auto">
+                <a href="{% url 'announce' %}" class="one"><h4>Announcements</h4></a>
+            </div>
+            <div class="col-sm-auto">
+                <a href="{% url 'tracker' %}"><h4>Status</h4></a>
+            </div>
+            <div class="col-sm-auto">
+                <a href="{% url 'travel' %}"><h4>Travel reimbursement</h4></a>
+            </div>
+            <div class="col-sm-auto">
+                <a href="{% url 'project' %}"><h4>Project</h4></a>
+            </div>
+            <div class="col-sm-auto">
+                <a href="{% url 'teamdetails' %}"><h4>Team Details</h4></a>
+            </div>
+            <div class="col-sm-auto">
+                <a href="{% url 'home1' %}"><h4>SIGN OUT</h4></a>
             </div>
         </div>
     </div>
-    </header>
+</div>
 
 <body>
     <div class="container">
