@@ -8,13 +8,17 @@
     <meta name="HandheldFriendly" content="true">
     <!-- Bootstrap -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" media="screen">
-    <link href="p-dashboard.css" rel="stylesheet">
+    <link href="team-dash.css" rel="stylesheet">
   </head>
   <body>
     <header>
+        
         <div class="nav"><!--navigation bar-->
         <div class="container">
             <div class="row">
+                
+                    
+                
                 <div class="col-sm-auto">
                     <a href="announce.html" class="one"><h4>Announcements</h4></a>
                 </div>
@@ -25,12 +29,12 @@
                     <a href="travel.html"><h4>Travel reimbursement</h4></a>
                 </div>
                 <div class="col-sm-auto">
-                    <a href="#"><h4>Project</h4></a>
+                    <a href="project.html"><h4>Project</h4></a>
                 </div>
                 <div class="col-sm-auto">
-                    <a href="#"><h4>Team Details</h4></a>
+                    <a href="Edit.html"><h4>Team Details</h4></a>
                 </div>
-                <div class="col-sm-auto">
+                <div class="col-md-auto">
                     <input type="button" value="SIGN OUT" class="bt">
                 </div>
             </div>
@@ -38,15 +42,23 @@
     </div>
     </header>
     <div class="container">
-        <div class="col-sm-auto">
-            <div class="time"><!--timeline-->
-                <img src="timeline2.png" height="800px" >
+        <div class="row">
+            <div class="col-sm-auto">
+                <div class="time"><!--timeline-->
+                    <img src="timeline2.png" height="800px" >
+                </div>
             </div>
-        </div>
+            <div class="col-md-auto" id="main">
+                <img src="hack1.png">
+                <p>By HackofHack we bring together people with different outlook and solutions for already existing problems using technology and design. You will work together with your teams to envision and develop the technology of tomorrow for solving the problems of today.
+                </p>
+            </div>
+           
     </div>
-   
-  
-    <div class="container"><!--query box-->
+    </div>
+    <div class="container">
+    <div class="box">
+        <div class="col-md-auto">
         <form class="query">
             <h4>Drop your queries!</h4>
             <div class="g1">
@@ -63,56 +75,38 @@
              <br>
                  <input type="submit" value="ASK" class="bt1">
             
+        
+       </form>
+    </div>
+    <div class="col-md-auto">
+        <form class="otp">
+            <h4>Mark your presence!</h4>
+            <div class="g1">
+                <label for="no">Enter OTP:</label><br>
+                <h6>Note: To mark the presence at the campus, enter OTP.</h6>
+               
+                <input class="in3" type="text" id="no" name="login3" action="" method="post"><br>
+            </div> 
+            <br>
+                <input type="submit" value="ENTER" class="bt2">
+           
+        </form>
+    </div>
+    <div class="col-md-auto">
+        <div class="follow">
+            <div class="row">
+               <h5>Follow us on:</h5>
+               <a href="#"><img src="tweet.png" width="25px" height="25px"></a>
+               <a href="#"><img src="ld.png" width="25px" height="25px"></a> 
+               <a href="#"><img src="fb.png" width="25px" height="25px"></a>
+                
+               <a href="#"><img src="insta.png" width="25px" height="25px"></a>
+            </div>
         </div>
-    </form>
     </div>
 </div>
-        <div class="container"><!--otp for attendance-->
-            <form class="otp">
-                <h4>Mark your presence!</h4>
-                <div class="g1">
-                    <label for="no">Enter OTP:</label><br>
-                    <h6>Note: To mark the presence at the campus, enter OTP.</h6>
-                   
-                    <input class="in3" type="text" id="no" name="login3" action="" method="post"><br>
-                </div> 
-                <br>
-                    <input type="submit" value="ENTER" class="bt2">
-               
-            </form>
-        </div>
+</div>
     
-    
-     
-     <div class="container"><!---follow box-->
-        <div class="follow">
-         <div class="row">
-            <h5>Follow us on:</h5>
-            <a href="#"><img src="tweet.png" width="25px" height="25px"></a>
-            <a href="#"><img src="ld.png" width="25px" height="25px"></a> 
-            <a href="#"><img src="fb.png" width="25px" height="25px"></a>
-             
-            <a href="#"><img src="insta.png" width="25px" height="25px"></a>
-         </div>
-     </div>
-    </div>
-    <div class="main"><!--main box-->
-        <div class="container">
-            <div class="row">
-                <div class="col-md-auto">
-        <img src="hack1.png">
-        <p>By HackofHack we bring together people with different outlook and solutions for already existing problems using technology and design. You will work together with your teams to envision and develop the technology of tomorrow for solving the problems of today.
-        </p>
-        
-    </div>
-        </div>
-        </div>
-        
-    </div>
-       
-        
 
-
-
-  </body>
+</body>
 </html>

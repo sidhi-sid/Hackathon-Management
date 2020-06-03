@@ -5,9 +5,9 @@ body{
 h3{
     color:#27aa80;
     text-align: center;
-    margin-top: -120px;
+   
 }
-.container{
+#det{
     margin-top:50px;
     width:max-content;
     background: rgba(188, 245, 197, 0.2)
@@ -15,6 +15,7 @@ h3{
 
 #travel{
     margin-left: 50px;
+    
     padding-top: 10px;
     padding-bottom: 10px;
     
@@ -33,4 +34,31 @@ h5{
     margin-left: 690px;
     width:120px;
     font-weight: bold;
+}
+.nav{
+    height:100px;
+    background: rgba(147, 131, 207, 0.2)
+}
+.nav h4{
+    margin-top:30px;
+    color:#ff3e6d;
+    margin-left:30px;
+
+
+}
+.nav a:hover{
+    text-decoration: none;
+    
+    font-style: italic;
+}
+.bt1{
+    position: absolute;
+   top:30px;
+   right:-200px;
+    height:40px;
+    width:100px;
+    background-color: cornsilk;
+    color:#032d3c;
+    font-weight: bold;
+    font-size:large;
 }

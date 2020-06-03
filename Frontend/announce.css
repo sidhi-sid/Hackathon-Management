@@ -4,8 +4,36 @@ body{                    /*adding text and bg color*/
 }
 .ann{                        /*aligning image*/
     margin-left:450px;
+    height:180px;
 }
 h4,h5{                      /*text align and adding color*/
     text-align: center;
     color:#00d1cd;
+}
+.nav{
+    height:100px;
+    background: rgba(147, 131, 207, 0.2)
+}
+.nav h4{
+    margin-top:30px;
+    color:#ff3e6d;
+    margin-left:30px;
+
+
+}
+.nav a:hover{
+    text-decoration: none;
+    
+    font-style: italic;
+}
+.bt{
+    position: absolute;
+   top:30px;
+   right:-200px;
+    height:40px;
+    width:100px;
+    background-color: cornsilk;
+    color:#032d3c;
+    font-weight: bold;
+    font-size:large;
 }

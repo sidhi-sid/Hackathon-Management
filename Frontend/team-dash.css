@@ -1,0 +1,76 @@
+#main{
+    width:750px;
+    margin-top: 100px;
+}
+body{
+    background-color:#2c2c2c;
+    color:white;
+}
+.nav{
+    height:100px;
+    background: rgba(147, 131, 207, 0.2)
+}
+.nav h4{
+    margin-top:30px;
+    color:#ff3e6d;
+    margin-left:30px;
+
+
+}
+.nav a:hover{
+    text-decoration: none;
+    
+    font-style: italic;
+}
+.bt{
+    position: absolute;
+   top:30px;
+   right:-200px;
+    height:40px;
+    width:100px;
+    background-color: cornsilk;
+    color:#032d3c;
+    font-weight: bold;
+    font-size:large;
+}
+.time{
+    margin-left: -150px;
+}
+.box{
+    width:400px;
+    margin-left: 930px;
+    margin-top:-750px;
+}
+.query{
+    width:320px;
+    background: rgba(181, 187, 181, 0.2);
+    color:#00d1ff;
+    padding: 10px;
+}
+.in1,.in2,.in3{
+    width:300px;
+}
+.in2{
+    height:120px;
+
+}
+.otp{
+   width:320px;
+   margin-top:20px;
+    background: rgba(181, 187, 181, 0.2);
+    color:#ef5b50;
+    padding:10px;
+}
+.follow{
+    margin-top:20px;
+    width:320px;
+    background: rgba(181, 187, 181, 0.2);
+    color:#ef5b50;
+    padding: 10px;
+}
+.follow h5{
+    margin-left:15px;
+}
+.follow img{
+    margin-right: 5px;
+}

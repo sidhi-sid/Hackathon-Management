@@ -27,7 +27,8 @@ img { max-width: 100%; height: auto; }
 }
 .brname{
     color:#ff3e6d;
-   margin-top:-50px;
+   margin-top:30px;
+   margin-left: -60px;
 }
 .nav a:hover{
     text-decoration: none;
@@ -96,6 +97,6 @@ select{
     margin-left:20px;
 }
 .bt1{
-    margin-top: 30px;
-   margin-right: -50px;
+   margin-left: 700px;
+   margin-top:30px;
 }
