@@ -3,9 +3,12 @@ from django.contrib import auth
 from django.shortcuts import render, redirect, get_object_or_404
 from django.contrib.auth.decorators import login_required
 from django.utils import timezone
-from hackinfo2.models import LeaderDetail
+
 
 from django.contrib import auth
+
+
+
 
 def homepage(request):
     return render(request, 'hackinfo2/homepage.html' )

@@ -1,5 +1,5 @@
 from django.contrib import admin
 
 # Register your models here.
-# from .models import Leader
-# admin.site.register(Leader)
+from .models import Leader
+admin.site.register(Leader)

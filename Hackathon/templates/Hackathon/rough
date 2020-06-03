@@ -1,0 +1,19 @@
+class Leader(models.Model):
+        username = models.CharField(max_length=255, default="")
+        password = models.CharField(max_length=255, default="")
+        teamname = models.CharField(max_length=255, default="")
+        statusid = models.AutoField(primary_key=True, default="")
+        firstname1 = models.CharField(max_length=255, default="")
+        lastname1 = models.CharField(max_length=255, default="")
+        gender1 = models.CharField(max_length=40, default="")
+        email1 = models.CharField(max_length=255, default="")
+
+        college1 = models.CharField(max_length=300, default="")
+        yearofstudy1 = models.CharField(max_length=10, default="")
+        branch1 = models.CharField(max_length=40, default="")
+        github1 = models.URLField(max_length=250, default="")
+        linkedin1 = models.URLField(max_length=250, default="")
+        pub_date1 = models.DateTimeField(default="")
+
+        def __str__(self):
+            return self.username

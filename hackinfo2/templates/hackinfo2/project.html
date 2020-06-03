@@ -9,7 +9,30 @@
     <!-- Bootstrap -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" media="screen">
     <link href="project.css" rel="stylesheet">
-
+    <div class="nav">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-auto">
+                <a href="{% url 'announce' %}" class="one"><h4>Announcements</h4></a>
+            </div>
+            <div class="col-sm-auto">
+                <a href="{% url 'tracker' %}"><h4>Status</h4></a>
+            </div>
+            <div class="col-sm-auto">
+                <a href="{% url 'travel' %}"><h4>Travel reimbursement</h4></a>
+            </div>
+            <div class="col-sm-auto">
+                <a href="{% url 'project' %}"><h4>Project</h4></a>
+            </div>
+            <div class="col-sm-auto">
+                <a href="{% url 'teamdetails' %}"><h4>Team Details</h4></a>
+            </div>
+            <div class="col-sm-auto">
+                <a href="{% url 'home1' %}"><h4>SIGN OUT</h4></a>
+            </div>
+        </div>
+    </div>
+</div>
   </head>
   <body>
  <div class="container">
@@ -83,3 +106,52 @@
  </div>
   </body>
 </html>
+<style>
+body{
+    background-color:#2c2c2c;
+    color:#bceb3c;
+}
+.container{
+    margin-top:45px;
+    width:max-content;
+    background: rgba(188, 245, 197, 0.2)
+}
+h3{
+    margin-top:-100px;
+    text-align: center;
+}
+.logo{
+    margin-left: 400px;
+    margin-top: -10px;
+}
+.in1{
+    width:400px;
+}
+.in2{
+    width:1000px;
+}
+.in3{
+    width:1050px;
+    height:120px;
+}
+.in4{
+    width:1050px;
+    height:70px;
+}
+.in5{
+    width:1050px;
+    height:40px;
+}
+.in6,.in7{
+    width:1050px;
+}
+#pro{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.bt{
+    margin-left:480px;
+    width:120px;
+    font-weight: bold;
+} 
+</style>
