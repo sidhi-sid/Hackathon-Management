@@ -20,6 +20,23 @@ img { max-width: 100%; height: auto; }
         content: attr(data-src-800px, url);
     }
 }
+.nav{
+    height:100px;
+    background: rgba(147, 131, 207, 0.2);
+    
+}
+.brname{
+    color:#ff3e6d;
+   margin-top:-50px;
+}
+.nav a:hover{
+    text-decoration: none;
+}
+
+.nav h4{
+    
+    color:#ff3e6d;
+}
 body{
     background-color:#2c2c2c;
 }
@@ -34,7 +51,7 @@ body{
    background: rgba(181, 187, 181, 0.2)
 }
 h4{
-    margin-top: -80px;
+    margin-top: -70px;
     margin-bottom: 80px;
     text-align: center;
     color:#e41749;
@@ -72,8 +89,13 @@ select{
     margin-left:350px;
 }
 .logo{
-    margin-left:450px;
+    margin-right:800px;
+   margin-top:-23px;
 }
 .mem1{
     margin-left:20px;
+}
+.bt1{
+    margin-top: 30px;
+   margin-right: -50px;
 }
