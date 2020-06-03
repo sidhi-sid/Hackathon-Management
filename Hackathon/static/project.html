@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
-    {% load static %}
     <title>HoH</title>
-
+    
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="HandheldFriendly" content="true">
@@ -13,18 +12,16 @@
   </head>
   <body>
  <div class="container">
-   <a href="{% url 'userdashboard' %}">
-     <img class="logo" src="Copy of Hackofhack.png" width="260px" height="260px">
-  </a>
+  <img class="logo" src="Copy of Hackofhack.png" width="260px" height="260px">
      <div id="formdiv">
-
-
+      
+        
          <form id="pro">
-
+            
                 <div class="g1">
                     <label for="in1">Name of the project:</label><br>
                     <input class="in1" type="text" id="in1" name="pro1" action="" method="post"><br>
-
+                 
                 </div>
                  <div  class="g2">
                     <label for="in2">Tagline of your project:</label><br>
@@ -55,8 +52,8 @@
                    <div class="g8">
                      <label for="in8">Upload image file</label><br>
                      <input class="in8" type="file" id="in8" name="pro8" action="" method="post">
-                    </div>
-                   </div>
+                    </div>  
+                   </div>                
                      <div class="col-md-auto">
                        <div class="g9">
                          <label for="in9">Upload image file</label><br>
@@ -75,11 +72,11 @@
                           <input class="in11" type="file" id="in11" name="pro11" action="" method="post"><br>
                          </div>
                       </div>
-                  </div>
-
+                  </div>     
+                
                  <br>
-                 <input type="submit" value="SUBMIT" class="bt">
-         </form>
+                 <input type="submit" value="SUBMIT" class="bt">  
+         </form> 
      </div>
  </div>
   </body>

@@ -1,25 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-
+{% load static %}
 <head>
 
 <title>HOME</title>
-{% load static %}
-<link rel="stylesheet" href="css/bootstrap.min.css"/>
-<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700i" rel="stylesheet"/>
+ <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700i" rel="stylesheet">
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" media="screen">
 <meta charset="utf-8"/>
-<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
-    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <link rel="stylesheet" type="text/css" href="style.css">
 <link rel="stylesheet" type="text/css" href="/footer/css/style.css">
 <link rel="stylesheet" type="text/css" href="/footer/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 </head>
 
 <body>
+<!-- Scroll Bar start-->
 <div id="progressbar"></div>
 <div id="scrollPath"></div>
+<!-- Scroll Bar end -->
+<!-- nav Bar start -->
  <header>
-	<div class="nav-icon float-right">
+	<div class="nav-icon">
         <span></span>
         <span></span>
         <span></span>
@@ -33,7 +39,7 @@
         Register
     </a>
     </div>
-    <div class="nav-item float-right">
+    <div class="organiser">
         <a href="{% url 'login1' %}">
         <span></span>
         <span></span>
@@ -42,66 +48,77 @@
         Organiser
     </a>
     </div>
-</header>
+  </div>
+  
+  </div>
 
-<a href="{% url 'home1' %}" ><img class="ion" src="{% static 'logo.jpg' %}" formaction='{% url 'home1' %}' width="100px" height="100px">
+</header>
+<!-- Nav Bar end -->
+<!-- FHack Icon -->
+<a href= "{% url 'home1' %}">
+<img class="ion" src="{% static 'logo.jpg' %}" width="100px" height="100px">
 </a>
-<!-- Full Menu -->
+<!-- Full Menu start -->
     </div>
         <div class="main-content">
-        <h1 class="main-title">About</h1>
-        <span class="hello">hackCBS 2.0, a legacy being carried forward by students of SSCBS aims to collaborate the intellects of programmers, designers, application developers, tech-geeks and newbies in the world of programming for the intensive development of a hack. </span><br>
+        <h1 class="main-title" id="about">About</h1>
+        <span class="hello">Bootstrap employs a handful of important global styles and settings that you’ll need to be aware of when using it, all of which are almost exclusively geared towards the normalization of cross browser styles. Let’s dive in. </span><br>
     </div>
 <div class="full-menu">
 	<div class="fullmenu-content">
 		<ul class="page-menu">
 			<li><a class="active" href="index-2.html" data-text="Home">Home</a></li>
-			<li><a href="#main-content" data-text="About">About</a></li>
-			<li><a href="#mid" data-text="Themes">Themes</a></li>
-			<li><a href="#schedule" data-text="Schedule">Schedule</a></li>
-			<li><a href="#" data-text="Contact">Contact</a></li>
-            <li><a href="#" data-text="Mentor">Mentor</a></li>
+			<li><a href="#about" data-text="About">About</a></li>
+			<li><a href="#TH" data-text="Themes">Themes</a></li>
+			<li><a href="#SC" data-text="Schedule">Schedule</a></li>
+			<li><a href="#G" data-text="Glimpse">Glimpse</a></li>
+            <li><a href="#F" data-text="Contact">Contact</a></li>
 			<li class="social">
-				<a href="#"><img src='icons/social/twitter.svg' alt=""></a>
-				<a href="#"><img src="icons/social/dribbble.svg" alt=""></a>
-				<a href="#"><img src="icons/social/instagram.svg" alt=""></a>
+				<a href="https://www.twitter.com"><img src="icons/social/twitter.svg" alt=""></a>
+				<a href="https://www.dribble.com"><img src="icons/social/dribbble.svg" alt=""></a>
+				<a href="https://www.instagram.com"><img src="icons/social/instagram.svg" alt=""></a>
 				<a href="#"><img src="icons/social/send.svg" alt=""></a>
 			</li>
 		</ul>
 	</div>
 	<a href="#0" class="modal-close"></a>
 </div>
-<!-- Ink Transition -->
-
+<!-- Full Manu End -->
+<!-- Theme start -->
 <div class="wrapper">
-<section class="mid">
+<section class="theme" id="TH">
     <h1>Themes</h1><br>
     <div class="container">
+        <!-- One theme start -->
         <div class="box">
             <div class="imgBx">
-                <img src= "{% static 'Fintech.jpg' %}" >
+                <img src="{% static 'Fintech.jpg' %}">
             </div>
             <div class="details">
                 <div class="content">
                     <h2>FinTech</h2>
-                    <p>Financial technology, also known as fintech, is an economic industry composed of companies that use technology to make financial services more efficient.It is used to describe new tech that seeks to improve and automate the delivery and use of financial services.</p>
+                    <p>Financial technology, is an economic industry composed of companies that use technology to make financial services more efficient.It is used to describe new tech that seeks to improve and automate the delivery and use of financial services.</p>
                 </div>
             </div>
         </div>
+        <!-- One theme end -->
+        <!-- One theme start -->
         <div class="box">
             <div class="imgBx">
                 <img src="{% static 'Education.jpg' %}">
             </div>
             <div class="details">
                 <div class="content">
-                    <h2>Education</h2>
-                    <p>Educational technology is the combined use of  hardware, software, and educational theory and practice to facilitate learning. Educational technology creates, uses, and manages technological processes and educational resources to help improve user academic performance.</p>
+                    <h2>EduTech</h2>
+                    <p>EduTech is the combined use of  hardware, software, and educational theory and practice to facilitate learning. EduTech creates, uses, and manages technological processes and educational resources to help improve user academic performance.</p>
                 </div>
             </div>
         </div>
+        <!-- One theme end -->
+        <!-- One theme start -->
         <div class="box">
             <div class="imgBx">
-                <img src="{% static 'Healthcare.jpg' %}" >
+                <img src="{% static 'Healthcare.jpg' %}">
             </div>
             <div class="details">
                 <div class="content">
@@ -110,20 +127,24 @@
                 </div>
             </div>
         </div>
+        <!-- One theme end -->
+        <!-- One theme start -->
         <div class="box">
             <div class="imgBx">
-                <img src= "{% static 'CyberSecurity.jpg' %}" >
+                <img src="{% static 'CyberSecurity.jpg' %}">
             </div>
             <div class="details">
                 <div class="content">
                     <h2>Cyber Security</h2>
-                    <p>Computer security, cybersecurity or information technology security is the protection of computer systems and networks from the theft of or damage to their hardware, software, or electronic data, as well as from the disruption or misdirection of the services they provide.</p>
+                    <p>Cybersecurity or information technology security is the protection of computer systems and networks from the theft of or damage to their hardware, software, or electronic data, as well as from the disruption or misdirection of the services they provide.</p>
                 </div>
             </div>
         </div>
+        <!-- One theme end -->
+        <!-- One theme start -->
         <div class="box">
             <div class="imgBx">
-                <img src= "{% static 'IOT.jpg' %}" >
+                <img src="{% static 'IOT.jpg' %}">
             </div>
             <div class="details">
                 <div class="content">
@@ -132,28 +153,8 @@
                 </div>
             </div>
         </div>
-        <div class="box">
-            <div class="imgBx">
-                <img src= "{% static 'Environment.jpg' %}" >
-            </div>
-            <div class="details">
-                <div class="content">
-                    <h2>EnviroTech</h2>
-                    <p>Environmental technology (envirotech) is the application of one or more of environmental science, green chemistry, environmental monitoring and electronic devices to monitor, model and conserve the natural environment and resources</p>
-                </div>
-            </div>
-        </div>
-        <div class="box">
-            <div class="imgBx">
-                <img src= "{% static 'ARVR.jpg' %}"  >
-            </div>
-            <div class="details">
-                <div class="content">
-                    <h2>AR/VR</h2>
-                    <p>Augmented reality (AR) adds digital elements to a live view often by using the camera on a smartphone.Example - Pokemon Go. Virtual reality (VR) implies a complete immersion experience that shuts out the physical world. Example - Google Cardboard</p>
-                </div>
-            </div>
-        </div>
+        <!-- One theme end -->
+        <!-- One theme start -->
         <div class="box">
             <div class="imgBx">
                 <img src="{% static 'COVID.jpg' %}">
@@ -166,82 +167,220 @@
                 </div>
             </div>
         </div>
-        <div class="box">
-            <div class="imgBx">
-                <img src= "{% static 'Robotics.jpg' %}">
-            </div>
-            <div class="details">
-                <div class="content">
-                    <h2>Robotics</h2>
-                    <p>When we think about robotics first thing that come to our mind is automation. Robots are known to perform tasks automatically without much human intervention, except for initial programming and instruction set being provided to them.</p>
-                </div>
-            </div>
-        </div>
     </div>
 </section>
-<section class="schedule">
+<!-- Theme end -->
+<!-- Schedule start -->
+<section class="schedule" id="SC">
+    <!-- One Schedule Name -->
         <div class="leftBox">
             <div class="content">
-                <h1>Event</h1>
-                <p>hackCBS 2.0, a legacy being carried forward by students of SSCBS aims to collaborate the intellects of programmers, designers, application developers.</p>
+                <h1>Schedule</h1>
+                <p>Bootstrap employs a handful of important global styles and settings that you’ll need to be aware of when using it, all of which are almost exclusively geared towards the normalization of cross browser styles. Let’s dive in.</p>
             </div>
         </div>
+        <!-- schedule Name end -->
+        <!-- for list of events -->
         <div class="event">
             <ul>
+                <!-- One Event start -->
                 <li>
                     <div class="time">
                         <h3>Time1</h3>
                     </div>
                     <div class="details">
                         <h3>Event1</h3>
-                        <p>hackCBS 2.0, a legacy being carried forward by students of SSCBS aims to collaborate the intellects of programmers, designers, application developers, .</p>
+                        <p>Bootstrap employs a handful of important global styles and settings that you’ll need to be aware of when using it, all of which are almost exclusively geared towards the normalization of cross browser styles. Let’s dive in.</p>
                         <a href="#">View Details</a>
                     </div>
                     <div style="clear: both;"></div>
                 </li>
+                <!-- One Event end -->
+                <!-- One Event start -->
                 <li>
                     <div class="time">
                         <h3>Time2</h3>
                     </div>
                     <div class="details">
                         <h3>Event2</h3>
-                        <p>hackCBS 2.0, a legacy being carried forward by students of SSCBS aims to collaborate the intellects of programmers, designers, application developers, </p>
+                        <p>Bootstrap employs a handful of important global styles and settings that you’ll need to be aware of when using it, all of which are almost exclusively geared towards the normalization of cross browser styles. Let’s dive in. </p>
                         <a href="#">View Details</a>
                     </div>
                     <div style="clear: both;"></div>
                 </li>
+                <!-- One Event end -->
+                <!-- One Event start -->
                 <li>
                     <div class="time">
                         <h3>Time3</h3>
                     </div>
                     <div class="details">
                         <h3>Event3</h3>
-                        <p>hackCBS 2.0, a legacy being carried forward by students of SSCBS aims to collaborate the intellects of programmers, designers, application developers,</p>
+                        <p>Bootstrap employs a handful of important global styles and settings that you’ll need to be aware of when using it, all of which are almost exclusively geared towards the normalization of cross browser styles. Let’s dive in.</p>
                         <a href="#">View Details</a>
                     </div>
                     <div style="clear: both;"></div>
                 </li>
+                <!-- One Event end -->
             </ul>
         </div>
     </section>
+    <!-- Event end -->
+    <!-- Social start -->
     <section>
     <div class="main-content">
 		<div class="social">
-			<a href="#"><img src="icons/social/twitter.svg" alt=""></a>
-			<a href="#"><img src="icons/social/instagram.svg" alt=""></a>
-			<a href="#"><img src="icons/social/dribbble.svg" alt=""></a>
-			<a href="#"><img src="icons/social/send.svg" alt=""></a>
+			<a href="#"><img src="{% static 'twitter.svg' %}" alt=""></a>
+			<a href="#"><img src="{ % static 'instagram.svg' %}" alt=""></a>
+			<a href="#"><img src="{% static 'dribbble.svg' %}" alt=""></a>
+			<a href="#"><img src="{% static 'send.svg' %}" alt=""></a>
 		</div>
 	</div>
 </section>
+<!-- social end -->
 <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+<!-- Glimpse start -->
+<section class="glimpse" id="G">
+    <h1>Glimpse</h1><br>
+    <!-- One Glimpse start -->
+    <div class="box">
+        <div class="card">
+            <div class="imgBx">
+                <img src="{% static 'Glimpse.jpg' %}">
+            </div>
+            <div class="details">
+                <h2>Glimpse</h2>
+            </div>
+        </div>
+    </div>
+    <!-- One Glimpse end -->
+    <!-- One Glimpse start -->
+    <div class="box">
+        <div class="card">
+            <div class="imgBx">
+                <img src="{% static 'Glimpse.jpg' %}">
+            </div>
+            <div class="details">
+                <h2>Glimpse</h2>
+            </div>
+        </div>
+    </div>
+    <!-- One Glimpse end -->
+    <!-- One Glimpse start -->
+    <div class="box">
+        <div class="card">
+            <div class="imgBx">
+                <img src="{% static 'Glimpse.jpg' %}">
+            </div>
+            <div class="details">
+                <h2>Glimpse</h2>
+            </div>
+        </div>
+    </div>
+    <!-- One Glimpse end -->
+</section>
+<!-- Glimpse end -->
+<br>
+<!-- Sponsor Start -->
+<section class="sponsor">
+    <h1 align="center">SPONSORS</h1>
+    <div class="container">
+        <!-- One Sponsor start -->
+        <div class="card">
+            <div class="imgBx">
+                <img src="{% static 'sponsor1.jpg' %}">
+            </div>
+            <div class="contentBx">
+                <h2>Sponsor1</h2>
+                <div class="details">
+                    <h3>Website</h3>
+                    <span><a href="#">XYZ</a></span>
+                </div>
+            </div>
+        </div>
+        <!-- One Sponsor end -->
+        <!-- One Sponsor start -->
+         <div class="card">
+            <div class="imgBx">
+                <img src="{% static 'sponsor1.jpg' %}">
+            </div>
+            <div class="contentBx">
+                <h2>Sponsor1</h2>
+                <div class="details">
+                    <h3>Website</h3>
+                    <span><a href="#">XYZ</a></span>
+                </div>
+            </div>
+        </div>
+        <!-- One Sponsor end -->
+        <!-- One Sponsor start -->
+         <div class="card">
+            <div class="imgBx">
+                <img src="{% static 'sponsor1.jpg' %}">
+            </div>
+            <div class="contentBx">
+                <h2>Sponsor1</h2>
+                <div class="details">
+                    <h3>Website</h3>
+                    <span><a href="#">XYZ</a></span>
+                </div>
+            </div>
+        </div>
+        <!-- One Sponsor end -->
+        <!-- One Sponsor start -->
+        <div class="card">
+            <div class="imgBx">
+                <img src="{% static 'sponsor1.jpg' %}">
+            </div>
+            <div class="contentBx">
+                <h2>Sponsor1</h2>
+                <div class="details">
+                    <h3>Website</h3>
+                    <span><a href="#">XYZ</a></span>
+                </div>
+            </div>
+        </div>
+        <!-- One Sponsor end -->
+        <!-- One Sponsor start -->
+        <div class="card">
+            <div class="imgBx">
+                <img src="{% static 'sponsor1.jpg' %}">
+            </div>
+            <div class="contentBx">
+                <h2>Sponsor1</h2>
+                <div class="details">
+                    <h3>Website</h3>
+                    <span><a href="#">XYZ</a></span>
+                </div>
+            </div>
+        </div>
+        <!-- One Sponsor end -->
+        <!-- One Sponsor start -->
+        <div class="card">
+            <div class="imgBx">
+                <img src="{% static 'sponsor1.jpg' %}">
+            </div>
+            <div class="contentBx">
+                <h2>Sponsor1</h2>
+                <div class="details">
+                    <h3>Website</h3>
+                    <span><a href="#">XYZ</a></span>
+                </div>
+            </div>
+        </div>
+        <!-- One Sponsor end -->
+    </div>
+</section>
+<!-- Sponsor end -->
+<!-- FAQ start -->
     <section class="FAQ">
         <div class="container2">
             <h1>FAQ's</h1>
             <br>
             <div class="accordion">
+                <!-- One FAQ start -->
                 <div class="accordion-item" id="question1">
-                    <a class="accordion-link" href="#">
+                    <a class="accordion-link" href="#question1">
                         What is a Hackathon?
                         <ion-icon name="add" class="icon ion-md-add"></ion-icon>
                         <ion-icon name="remove" class="icon ion-md-remove"></ion-icon>
@@ -250,8 +389,10 @@
                         <p>A hackathon can be best described as an “invention marathon”, or in simple words hackathons are about bringing your crazy ideas to reality. It’s an event where any tech-enthusiast, regardless of their individual field can come and participate to learn, build and share their creations over the course of a weekend, in a relaxed and productive environment. Hackathons are simply a venue for self-expression and creativity, where people come together and transform their thoughts into reality, through technology.</p>
                     </div>
                 </div>
+                <!-- One FAQ end -->
+                <!-- One FAQ start -->
                 <div class="accordion-item" id="question2">
-                    <a class="accordion-link" href="#">
+                    <a class="accordion-link" href="#question2">
                         How big a team can be?
                         <ion-icon name="add" class="icon ion-md-add"></ion-icon>
                         <ion-icon name="remove" class="icon ion-md-remove"></ion-icon>
@@ -260,8 +401,10 @@
                         <p>The maximum team size is four and lone rangers are also welcome. Participants selected on an individual basis and can team up on the spot as well.</p>
                     </div>
                 </div>
+                <!-- One FAQ end -->
+                <!-- One FAQ start -->
                 <div class="accordion-item" id="question3">
-                    <a class="accordion-link" href="#">
+                    <a class="accordion-link" href="#question3">
                         Who all can participate?
                         <ion-icon name="add" class="icon ion-md-add"></ion-icon>
                         <ion-icon name="remove" class="icon ion-md-remove"></ion-icon>
@@ -270,8 +413,10 @@
                         <p>This is a student hackathon and only students are allowed to participate. You’ll be required to verify at the event by showing your student ID card.</p>
                     </div>
                 </div>
+                <!-- One FAQ end -->
+                <!-- One FAQ start -->
                 <div class="accordion-item" id="question4">
-                    <a class="accordion-link" href="#">
+                    <a class="accordion-link" href="#question4">
                         Do I need to have any specific qualifications to be a participant for the hackathon?
                         <ion-icon name="add" class="icon ion-md-add"></ion-icon>
                         <ion-icon name="remove" class="icon ion-md-remove"></ion-icon>
@@ -280,9 +425,10 @@
                         <p>If you love to code, you are more than welcome to participate in the hackathon. Though we may screen applications to maintain high standards.</p>
                     </div>
                 </div>
-
+                <!-- One FAQ end -->
+                <!-- One FAQ start -->
                 <div class="accordion-item" id="question5">
-                    <a class="accordion-link" href="#">
+                    <a class="accordion-link" href="#question5">
                         I am a newbie, can I hack?
                         <ion-icon name="add" class="icon ion-md-add"></ion-icon>
                         <ion-icon name="remove" class="icon ion-md-remove"></ion-icon>
@@ -291,8 +437,10 @@
                         <p>Of course you can! We at hackCBS ensure that no one is left behind during the hacking, thanks to our mentors and volunteers who help us achieve the same. We make sure that you learn the best you can alongside having fun and experiencing what it feels to belong to a community.</p>
                     </div>
                 </div>
+                <!-- One FAQ end -->
+                <!-- One FAQ start -->
                 <div class="accordion-item" id="question6">
-                    <a class="accordion-link" href="#">
+                    <a class="accordion-link" href="#question6">
                         Can I start working on my hack before the event?
                         <ion-icon name="add" class="icon ion-md-add"></ion-icon>
                         <ion-icon name="remove" class="icon ion-md-remove"></ion-icon>
@@ -301,8 +449,10 @@
                         <p>No. In the interest of fairness, students should not be working on their projects before hackCBS begins and we do not allow participants to work on pre-existing projects. However, you can familiarize yourself with all the tools and technologies you intend to use beforehand.</p>
                     </div>
                 </div>
+                <!-- One FAQ end -->
+                <!-- One FAQ start -->
                 <div class="accordion-item" id="question7">
-                    <a class="accordion-link" href="#">
+                    <a class="accordion-link" href="#question7">
                         What to bring to the hackathon?
                         <ion-icon name="add" class="icon ion-md-add"></ion-icon>
                         <ion-icon name="remove" class="icon ion-md-remove"></ion-icon>
@@ -311,8 +461,10 @@
                         <p>Please bring a valid university ID (or any student ID if in high school), a computer (preferably a laptop), chargers, and any hardware you will use for your hack. Please bring your own extensions although we'll have them available on minimum rent charges. No firearms, weapons, alcohol, or illegal drugs are allowed on campus.</p>
                     </div>
                 </div>
+                <!-- One FAQ end -->
+                <!-- One FAQ start -->
                 <div class="accordion-item" id="question8">
-                    <a class="accordion-link" href="#">
+                    <a class="accordion-link" href="#question8">
                         What is the shortlisting procedure?
                         <ion-icon name="add" class="icon ion-md-add"></ion-icon>
                         <ion-icon name="remove" class="icon ion-md-remove"></ion-icon>
@@ -321,8 +473,10 @@
                         <p>Based on the info provided in the registration form and a telephonic interview (if required), teams will be shortlisted for the hackathon.</p>
                     </div>
                 </div>
+                <!-- One FAQ end -->
+                <!-- One FAQ start -->
                 <div class="accordion-item" id="question9">
-                    <a class="accordion-link" href="#">
+                    <a class="accordion-link" href="#question9">
                         Does hackCBS helps with travel reimbursement?
                         <ion-icon name="add" class="icon ion-md-add"></ion-icon>
                         <ion-icon name="remove" class="icon ion-md-remove"></ion-icon>
@@ -331,8 +485,10 @@
                         <p>Yes, definitely we do to the brightest minds but on case to case basis (keeping in mind all the other constraints). If eligible you'll be informed about this over mail following the Hackathon.</p>
                     </div>
                 </div>
+                <!-- One FAQ end -->
+                <!-- One FAQ start -->
                 <div class="accordion-item" id="question10">
-                    <a class="accordion-link" href="#">
+                    <a class="accordion-link" href="#question10">
                         Does hackCBS provides Internet facility during hackathon?
                         <ion-icon name="add" class="icon ion-md-add"></ion-icon>
                         <ion-icon name="remove" class="icon ion-md-remove"></ion-icon>
@@ -341,8 +497,10 @@
                         <p>You're advised to bring your own broadband/hotspot device as we can arrange for atmost one connection per team.</p>
                     </div>
                 </div>
+                <!-- One FAQ end -->
+                <!-- One FAQ start -->
                 <div class="accordion-item" id="question11">
-                    <a class="accordion-link" href="#">
+                    <a class="accordion-link" href="#question11">
                         Error 404 question not found?
                         <ion-icon name="add" class="icon ion-md-add"></ion-icon>
                         <ion-icon name="remove" class="icon ion-md-remove"></ion-icon>
@@ -351,69 +509,110 @@
                         <p>Drop us a mail at connect@abc.tec and we would be more than happy to answer your queries. Also, feel free to write if you'd like to volunteer for the event or be a mentor or judge!</p>
                     </div>
                 </div>
+                <!-- One FAQ end -->
             </div>
         </div>
     </section>
+<!-- FAQ end -->
+<!-- About start -->
 <section class="end">
+    <!-- One Member Card Start -->
     <div class="box1">
             <div class="imgBx1">
-                <img src="{% static 'anjali1.jpg'  %}">
+                <img src="{% static 'anjali1.jpg' %}">
             </div>
             <div class="content1">
                 <h2>Anjali Pushkar<br><span>Backend Developer</span></h2>
             </div>
         </div>
+        <!-- One Member Card End -->
+        <!-- One Member Card Start -->
         <div class="box1">
             <div class="imgBx1">
-                <img src= "{% static 'Vibhuti.jpg'  %}" >
+                <img src="{% static 'Vibhuti.jpg' %}">
             </div>
             <div class="content1">
                 <h2>Vibhuti Jain<br><span>Frontend Developer</span></h2>
             </div>
         </div>
+        <!-- One Member Card End -->
+        <!-- One Member Card Start -->
         <div class="box1">
                 <div class="imgBx1">
-                    <img src= "{% static 'Sidhi.jpg'  %}">
+                    <img src="{% static 'Sidhi.jpg' %}">
                 </div>
                 <div class="content1">
                     <h2>Sidhi Sharma<br><span>Backend Developer</span></h2>
                 </div>
         </div>
+        <!-- One Member Card End -->
 </section>
-<footer>
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-xl-10 col-lg-9 col-md-8 ml-auto">
-            <div class="row border-top pt-3">
-              <div class="col-lg-6 text-center">
-                <ul class="list-inline">
-                  <li class="list-inline-item mr-2">
-                    <a href="#" class="text-dark">Home</a>
-                  </li>
-                  <li class="list-inline-item mr-2">
-                    <a href="#" class="text-dark">About</a>
-                  </li>
-                  <li class="list-inline-item mr-2">
-                    <a href="#" class="text-dark">Support</a>
-                  </li>
-                  <li class="list-inline-item mr-2">
-                    <a href="#" class="text-dark">Blog</a>
-                  </li>
-                </ul>
-              </div>
-              <div class="col-lg-6 text-center">
-                <p>&copy; 2020 Copyright. Made With <i class="fas fa-heart text-danger"></i> by <span class="text-success">LadyBugs</span></p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
-</div>
+<!-- About End -->
+<!-- Footer Start -->
+ <footer id="F">
 
+        <div class="container-fluid p-0">
+
+            <div class="row text-left">
+
+                <div class="col-md-4 col-sm-4">
+                    <h4 class="text-light">About us</h4>
+                    <p class="text-muted">
+                        This Page is all about Hackathon
+                    </p>
+
+                </div>
+
+                <div class="col-md-4 col-sm-4" id="contact_us">
+                    <h4 class="text-light">Contact Us</h4>
+                    <p class="text-muted">
+                        For any queries email us on:<br>
+                        abc@gmail.com<br>
+                        Or contact : ABC 9999999999<br>
+                        Regards - HackTeam<br>
+                    </p>
+
+                </div>
+
+
+                <div class="col-md-4 col-sm-4">
+                    <h4 class="text-light">Follow Us:</h4>
+                    <p class="text-muted">Became A Sponsor
+                    </p>
+                    <div class="column text-light last">
+                        <a href="https://www.facebook.com/ifeelking/"><i class="fa fa-facebook fa-lg"> </i></a>
+                        <a href="https://www.instagram.com/ifeelking/"> <i class="fa fa-instagram fa-lg"></i> </a>
+                        <a href="https://www.twitter.com"> <i
+                                class="fa fa-twitter fa-lg"></i> </a>
+                    </div>
+                </div>
+
+                <div class="my_name col-md-12 col-sm-12 text-center">
+                    <h6 class="text-light">Made With <i class="fa fa-heart" style="color: red;"> </i> and <i
+                            class="fa fa-coffee" style="color: red;"> </i> <a href="#"> LadyBugs</a></h6>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+    </footer>
     <!-- end of footer -->
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
 
+<!-- JS for scrollbar Start -->
 <script type="text/javascript">
     let progress = document.getElementById('progressbar');
     let totalHeight = document.body.scrollHeight - window.innerHeight;
@@ -422,6 +621,8 @@
         progress.style.height = progressHeight + "%";
     }
 </script>
+<!-- JS for scrollbar end -->
+
 <script src="jquery-2.1.4.min.js"></script>
 
  <script>
@@ -574,31 +775,6 @@ function smokeeffect () {
 
 }
 smokeeffect()
-
-
-
-/*--------------------------------------------------
- Hero Section Height
----------------------------------------------------*/
-     function homeh() {
-        var hometext = $('.main')
-
-        hometext.css({
-            "height": $(window).height() + "px"
-        });
-    }
-    homeh();
-    $(window).resize(homeh);
-
-
-    $( ".page-menu li:not(.social) a, .portfolio_filter ul li a").append( "<span></span>" );
-
-    $('.nav-icon').on("click", function(){
-            $(this).toggleClass('modal-close');
-    });
-
-
-
 }); // document load end
 </script>
 
@@ -608,993 +784,1332 @@ smokeeffect()
     </body>
 </html>
 
+    <!-- end of footer -->
+
 <style>
-  @import url("https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700i");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700i");
+/* Media Queries: Tablet Landscape */
+@media screen and (max-width: 1060px) {
+    #primary { width:67%; }
+    #secondary { width:30%; margin-left:3%;}
+}
 
-  *
-  {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* Media Queries: Tabled Portrait */
+@media screen and (max-width: 768px) {
+    #primary { width:100%; }
+    #secondary { width:100%; margin:0; border:none; }
+
+}
+@media (min-device-width:600px) {
+    img[data-src-600px] {
+        content: attr(data-src-600px, url);
+    }
+}
+
+@media (min-device-width:800px) {
+    img[data-src-800px] {
+        content: attr(data-src-800px, url);
+    }
+}
+img { max-width: 100%; height: auto; }
+
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto-Condensed', sans-serif;
+}
+body {
     font-family: 'Roboto-Condensed', sans-serif;
-  }
-  body {
-      font-family: 'Roboto-Condensed', sans-serif;
-      margin: 10px;
-      padding: 20px;
-     background: #000;
-     display: flex;
-     flex-wrap: wrap;
+    margin: 10px;
+    padding: 20px;
+   background: #000;
+   display: flex;
+   flex-wrap: wrap;
 
-  }
+}
 
-  .nav-up {
-      top: -20px;
-  }
+.nav-up {
+    top: -20px;
+}
 
 
-  li {
-      list-style: none;
-  }
-  /*-----------------------Scroll Bar------------------*/
-  ::-webkit-scrollbar
-  {
-      width: 0px;
-  }
-  #scrollPath
-  {
-      position: fixed;
-      top: 0;
-      right: 0;
-      width: 15px;
-      height: 100px;
-      background: rgba(255,255,255,0.05);
-  }
-  #progressbar
-  {
-      position: fixed;
-      top: 0;
-      right: 0;
-      width: 15px;
-      background: linear-gradient(to top, #008aff, #00ffe7);
-      animation: animate 5s linear infinite;
-  }
-  @keyframes animate
-  {
-      0%,100%
-      {
-          filter: hue-rotate(0deg);
-      }
-      50%
-      {
-          filter: hue-rotate(360deg);
-      }
-  }
-  #progressbar: before
-  {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: linear-gradient(to top, #008aff, #00ffe7);
-      filter: blur(10px);
-  }
-  #progressbar: after
-  {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: linear-gradient(to top, #008aff, #00ffe7);
-      filter: blur(30px);
-  }
-
-
-  /*------------------------ 2 Home ------------------------*/
-
-  body {
-      background-color: #000;
-      display: flex;
-      width: 100%;
-      position: relative;
-  }
-  body:after {
-      content: '';
-      width: 100%;
-      height: 100%;
-      left: 0;
-      z-index: -1;
-      opacity: .85;
-      position: relative;
-
-  }
-      .nav-icon
-      {
-          margin-left: 1000px;
-          margin-top: -520px;
-
-      }
-      .nav-icon
-      {
-          height: 16px;
-          width: 16px;
-          display: block;
-      }
-  .main-title {
-      font-size: 24px;
-      line-height: 28px;
-      color: #fff;
-      font-weight: 400;
-      text-align: center;
-      padding-bottom: 5px;
-  }
-
-  .hello {
-      color: #fff;
-      line-height: 10px;
-  }
-
-  .main-content {
-      padding-top: 0px;
-      display: table-cell;
-      height: 100%;
-      width: 100%;
-  }
-
-  .register a
-  {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%,-50%);
-      color: #1670f0;
-      padding: 15px 30px;
-      font-size: 15px;
-      letter-spacing: 2px;
-      text-transform: uppercase;;
-      text-decoration: none;
-      box-shadow: 0px 20px 50px rgba(0,0,0,.5);
-      overflow: hidden;
-  }
-  .register a:before
-  {
-      content: '';
-      position: absolute;
-      top: 2px;
-      left: 2px;
-      bottom: 2px;
-      width: 50%;
-      background: rgba(255,255,255,0.05);
-  }
-  .register a span:nth-child(1)
-  {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 2px;
-      background: linear-gradient(to right, #0c002b, #1779ff);
-      animation: animate1 2s linear infinite;
-  }
-  @keyframes animate1
-  {
-      0%
-      {
-          transform:translateX(-100%);
-      }
-      100%
-      {
-          transform:translateX(100%);
-      }
-  }
-  .register a span:nth-child(2)
-  {
-      position: absolute;
-      top: 0;
-      right: 0;
-      width: 2px;
-      height: 100%;
-      background: linear-gradient(to bottom, #0c002b, #1779ff);
-      animation: animate2 2s linear infinite;
-  }
-  @keyframes animate2
-  {
-      0%
-      {
-          transform:translateY(-100%);
-      }
-      100%
-      {
-          transform:translateY(100%);
-      }
-  }
-  .register a span:nth-child(3)
-  {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      height: 2px;
-      background: linear-gradient(to left, #0c002b, #1779ff);
-      animation: animate3 2s linear infinite;
-  }
-  @keyframes animate3
-  {
-      0%
-      {
-          transform:translateX(100%);
-      }
-      100%
-      {
-          transform:translateX(-100%);
-      }
-  }
-  .register a span:nth-child(4)
-  {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 2px;
-      height: 100%;
-      background: linear-gradient(to top, #0c002b, #1779ff);
-      animation: animate4 2s linear infinite;
-  }
-  @keyframes animate4
-  {
-      0%
-      {
-          transform:translateY(100%);
-      }
-      100%
-      {
-          transform:translateY(-100%);
-      }
-  }
-  /*------------------------ 2.1 Full Menu ------------------------*/
-
-  .full-menu {
-      position: fixed;
-      top: 0;
-      left: 0;
-      z-index: 3;
-      height: 100%;
-      width: 100%;
-      overflow: hidden;
-      background-size: cover;
-      opacity: 0;
-      visibility: hidden;
-      transition: opacity 0.3s 0s, visibility 0s 0.3s;
-  }
-
-  /* Full Menu */
-
-  .full-menu .modal-close {
-      /* 'X' icon */
-      position: absolute;
-      z-index: 1;
-      top: 0;
-      right: 0;
-      padding: 50px;
-      height: 45px;
-      width: 45px;
-      border-radius: 50%;
-      background:rgba(0,0,0,0.3) url(cd-icon-close.svg)no-repeat center center;
-      overflow: hidden;
-      text-indent: 100%;
-      white-space: nowrap;
-      visibility: hidden;
-      opacity: 0;
-      transform: scale(0);
-      visibility 0s 0.3s, opacity 0.3s 0s;
-
-      transition: transform 0.3s 0s, visibility 0s 0.3s, opacity 0.3s 0s;
-  }
-
-  .no-touch .full-menu .modal-close:hover {
-      background-color: rgba(0,0,0,0.3);
-  }
-
-  .full-menu.visible {
-      background-size: 100%;
-      opacity: 1;
-      visibility: visible;
-      transition: opacity 0.7s, visibility 0s;
-  }
-
-  .full-menu.visible .fullmenu-content {
-      -webkit-overflow-scrolling: touch;
-  }
-
-  .full-menu.visible .modal-close {
-      visibility: visible;
-      opacity: 1;
-      transition: transform 0.3s 0s, visibility 0s 0s, opacity 0.3s 0s;
-      transform: scale(1);
-  }
-
-  @media only screen and (min-width: 1100px) {
-      .full-menu .fullmenu-content {
-          padding: 6em 5%;
-      }
-      .full-menu .modal-close {
-          height: 60px;
-          width: 60px;
-      }
-      .full-menu p {
-          font-size: 25px;
-      }
-  }
-
-  .cd-transition-layer {
-      position: fixed;
-      top: 0;
-      left: 0;
-      z-index: 2;
-      height: 100%;
-      width: 100%;
-      opacity: 0;
-      visibility: hidden;
-      overflow: hidden;
-  }
-
-  .cd-transition-layer .bg-layer {
-      position: absolute;
-      left: 50%;
-      top: 50%;
-      -webkit-transform: translateY(-50%) translateX(-2%);
-      transform: translateY(-50%) translateX(-2%);
-      height: 100%;
-      /* our sprite is composed of 25 frames */
-      width: 2500%;
-      background: url(ink.png) no-repeat 0 0;
-      background-size: 100% 100%;
-  }
-
-  .cd-transition-layer.visible {
-      opacity: 1;
-      visibility: visible;
-  }
-
-  .cd-transition-layer.closing .bg-layer {
-      animation: cd-sequence-reverse 0s steps(24);
-      animation-fill-mode: forwards;
-  }
-
-  .no-cssanimations .cd-transition-layer {
-      display: none;
-  }
-
-
-  @keyframes cd-sequence {
-      0% {
-          transform: translateY(-50%) translateX(-2%);
-      }
-      100% {
-          transform: translateY(-50%) translateX(-98%);
-      }
-  }
-  /*------------------------ 2.2 Header ------------------------*/
-
-  .full-menu .fullmenu-content {
-      height: 100%;
-      width: 100%;
-      display: table;
-  }
-
-  .page-menu {
-      display: table-cell;
-      vertical-align: middle;
-      text-align: center;
-      position: relative;
-      opacity: 1;
-  }
-
-  .page-menu li {
-      line-height: 50px;
-      margin-left: -25px;
-      list-style: none;
-    text-align: center;
-  }
-
-  .page-menu li a {
-      position: relative;
-      color: #777;
-        text-decoration: none;
-        font-size: 3em;
-        padding: 5px 20px;
-        display: inline-flex;
-        font-weight: 700;
-        transition: 0.5s;
-
-  }
-  .page-menu:hover li a
-  {
-    color: #fff;
-  }
-  .page-menu li:hover a
-  {
-    color: #000;
-    background: rgba(255,255,255,1);
-  }
-  .page-menu li a:before
-  {
+li {
+    list-style: none;
+}
+/*-----------------------Scroll Bar------------------*/
+::-webkit-scrollbar
+{
+    width: 0px;
+}
+#scrollPath
+{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 15px;
+    height: 100px;
+    background: rgba(255,255,255,0.05);
+}
+#progressbar
+{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 15px;
+    background: linear-gradient(to top, #008aff, #00ffe7);
+    animation: animate 5s linear infinite;
+}
+@keyframes animate
+{
+    0%,100%
+    {
+        filter: hue-rotate(0deg);
+    }
+    50%
+    {
+        filter: hue-rotate(360deg);
+    }
+}
+#progressbar: before
+{
     content: '';
     position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, #008aff, #00ffe7);
+    filter: blur(10px);
+}
+#progressbar: after
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, #008aff, #00ffe7);
+    filter: blur(30px);
+}
+
+ /*------------------------ ScrollBar ------------------------*/
+/*------------------------ 2 Home ------------------------*/
+
+body {
+    background: rgba(0, 0, 0, 0.815);
+    display: flex;
+    width: 100%;
+    position: relative;
+}
+body:after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    left: 0;
+    z-index: -1;
+    opacity: .85;
+    position: relative;
+
+}
+    .nav-icon
+    {
+        margin-left: 990px;
+        margin-top: -520px;
+
+    }
+    .nav-icon
+    {
+        height: 16px;
+        width: 16px;
+        display: block;
+    }
+.main-title {
+    font-size: 24px;
+    line-height: 28px;
+    color: #fff;
+    font-weight: 400;
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+.hello {
+    color: #fff;
+    line-height: 10px;
+}
+
+.main-content {
+    padding-top: 0px;
+    display: table-cell;
+    height: 100%;
+    width: 100%;
+}
+
+.register a
+{
+    position: absolute;
     top: 50%;
-    left: 40%;
+    left: 50%;
     transform: translate(-50%,-50%);
+    color: #1670f0;
+    padding: 15px 30px;
+    font-size: 15px;
+    letter-spacing: 2px;
+    text-transform: uppercase;;
+    text-decoration: none;
+    box-shadow: 0px 20px 50px rgba(0,0,0,.5);
+    overflow: hidden;
+}
+.register a:before
+{
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    bottom: 2px;
+    width: 50%;
+    background: rgba(255,255,255,0.05);
+}
+.register a span:nth-child(1)
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to right, #0c002b, #1779ff);
+    animation: animate1 2s linear infinite;
+}
+@keyframes animate1
+{
+    0%
+    {
+        transform:translateX(-100%);
+    }
+    100%
+    {
+        transform:translateX(100%);
+    }
+}
+.register a span:nth-child(2)
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(to bottom, #0c002b, #1779ff);
+    animation: animate2 2s linear infinite;
+}
+@keyframes animate2
+{
+    0%
+    {
+        transform:translateY(-100%);
+    }
+    100%
+    {
+        transform:translateY(100%);
+    }
+}
+.register a span:nth-child(3)
+{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to left, #0c002b, #1779ff);
+    animation: animate3 2s linear infinite;
+}
+@keyframes animate3
+{
+    0%
+    {
+        transform:translateX(100%);
+    }
+    100%
+    {
+        transform:translateX(-100%);
+    }
+}
+.register a span:nth-child(4)
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(to top, #0c002b, #1779ff);
+    animation: animate4 2s linear infinite;
+}
+@keyframes animate4
+{
+    0%
+    {
+        transform:translateY(100%);
+    }
+    100%
+    {
+        transform:translateY(-100%);
+    }
+}
+.organiser a
+{
+    position: absolute;
+    top: 50%;
+    left: 65%;
+    transform: translate(-50%,-50%);
+    color: #1670f0;
+    padding: 15px 30px;
+    font-size: 15px;
+    letter-spacing: 2px;
+    text-transform: uppercase;;
+    text-decoration: none;
+    box-shadow: 0px 20px 50px rgba(0,0,0,.5);
+    overflow: hidden;
+}
+.organiser a:before
+{
+    content: '';
+    position: relative;
+    top: 2px;
+    left: 2px;
+    bottom: 2px;
+    width: 50%;
+    background: rgba(255,255,255,0.05);
+}
+
+/*------------------------ 2 Home ------------------------*/
+/*------------------------ 2.1 Full Menu ------------------------*/
+
+.full-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background-size: cover;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s 0s, visibility 0s 0.3s;
+}
+
+/* Full Menu */
+
+.full-menu .modal-close {
+    /* 'X' icon */
+    position: absolute;
+    z-index: 1;
+    top: 20px;
+    right: 50px;
+    padding: 20px;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background:rgba(0,0,0,0.3) url(cd-icon-close.svg)no-repeat center center;
+    overflow: hidden;
+    text-indent: 100%;
+    white-space: nowrap;
+    visibility: hidden;
+    opacity: 0;
+    transform: scale(0);
+    visibility 0s 0.3s, opacity 0.3s 0s;
+
+    transition: transform 0.3s 0s, visibility 0s 0.3s, opacity 0.3s 0s;
+}
+
+.no-touch .full-menu .modal-close:hover {
+    background-color: rgba(0,0,0,0.3);
+}
+
+.full-menu.visible {
+    background-size: 100%;
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.7s, visibility 0s;
+}
+
+.full-menu.visible .fullmenu-content {
+    -webkit-overflow-scrolling: touch;
+}
+
+.full-menu.visible .modal-close {
+    visibility: visible;
+    opacity: 1;
+    transition: transform 0.3s 0s, visibility 0s 0s, opacity 0.3s 0s;
+    transform: scale(1);
+}
+
+@media only screen and (min-width: 1100px) {
+    .full-menu .fullmenu-content {
+        padding: 6em 5%;
+    }
+    .full-menu .modal-close {
+        height: 30px;
+        width: 30px;
+    }
+    .full-menu p {
+        font-size: 25px;
+    }
+}
+
+.cd-transition-layer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    visibility: hidden;
+    overflow: hidden;
+}
+
+.cd-transition-layer .bg-layer {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translateY(-50%) translateX(-2%);
+    transform: translateY(-50%) translateX(-2%);
+    height: 100%;
+    /* our sprite is composed of 25 frames */
+    width: 2500%;
+    background: url(ink.png) no-repeat 0 0;
+    background-size: 100% 100%;
+}
+
+.cd-transition-layer.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+.cd-transition-layer.closing .bg-layer {
+    animation: cd-sequence-reverse 0s steps(24);
+    animation-fill-mode: forwards;
+}
+
+.no-cssanimations .cd-transition-layer {
+    display: none;
+}
+
+
+@keyframes cd-sequence {
+    0% {
+        transform: translateY(-50%) translateX(-2%);
+    }
+    100% {
+        transform: translateY(-50%) translateX(-98%);
+    }
+}
+/*------------------------ 2.1 Full Menu ------------------------*/
+/*------------------------ 2.2 Header ------------------------*/
+
+.full-menu .fullmenu-content {
+    height: 100%;
+    width: 100%;
+    display: table;
+}
+
+.page-menu {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    position: relative;
+    opacity: 1;
+    background: rgba(255,255,255,0.75);
+}
+
+.page-menu li {
+    line-height: 50px;
+    margin-left: -25px;
+    list-style: none;
+  text-align: center;
+}
+
+.page-menu li a {
+    position: relative;
+    color: #777;
+      text-decoration: none;
+      font-size: 3em;
+      padding: 5px 20px;
+      display: inline-flex;
+      font-weight: 700;
+      transition: 0.5s;
+
+}
+.page-menu:hover li a
+{
+  color: #fff;
+}
+.page-menu li:hover a
+{
+  color: #000;
+  background: rgba(255,255,255,1);
+}
+.page-menu li a:before
+{
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  transform: translate(-50%,-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4em;
+  color: rgba(255,255,255,.1);
+  border-radius: 50%;
+  z-index: -1;
+  opacity: 0;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 500px;
+  transition: letter-spacing 0.5s,left 0.5s;
+}
+.page-menu li a:hover:before
+{
+  content: attr(data-text);
+  opacity: 1;
+  left: 50%;
+  letter-spacing: 10px;
+  width: 1600px;
+  height: 1600px;
+}
+.page-menu li:nth-child(6n+1) a:before
+{
+  background: #81ecec;
+}
+.page-menu li:nth-child(6n+2) a:before
+{
+  background: #ff7675;
+}
+.page-menu li:nth-child(6n+3) a:before
+{
+  background: #55efc4;
+}
+.page-menu li:nth-child(6n+4) a:before
+{
+  background: #a29bfe;
+}
+.page-menu li:nth-child(6n+5) a:before
+{
+  background: #fd79a8;
+}
+.page-menu li:nth-child(6n+6) a:before
+{
+  background: #ffeaa7;
+}
+
+.social img {
+    width: 15px;
+}
+
+.main .social {
+    margin-top: 30px;
+    background:rgba(0,0,0,0.3);
+}
+
+.social a {
+    margin-right: 20px;
+}
+
+.social a:hover img {
+    opacity: .6;
+    transition: all ease 0.3s;
+}
+
+.social a:last-child {
+    margin-right: 0px;
+}
+
+
+
+
+header {
+    position: fixed;
+    padding: 30px;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+}
+.ion {
+    top: 0;
+    left: 0;
+}
+.nav-icon {
+    width: 23px;
+    height: 18px;
+    position: relative;
+    transform: rotate(0deg);
+    transition: .5s ease-in-out;
+    cursor: pointer;
+    margin-top: 7px;
+}
+
+.nav-icon span {
+    display: block;
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background: #fff;
+    opacity: 1;
+    transform: rotate(0deg);
+    transition: .25s ease-in-out;
+}
+
+.nav-icon span:nth-child(1) .icon{
+    top: 0px;
+    left: 0;
+    transform-origin: lright center;
+}
+
+.nav-icon span:nth-child(2) {
+    top: 6px;
+    transform-origin: right center;
+}
+
+.nav-icon span:nth-child(3) {
+    top: 12px;
+    transform-origin: right center;
+    right: 0;
+}
+
+.nav-icon:hover span:nth-child(3) {
+    width: 100%;
+}
+/*------------------------ 2.2 Header ------------------------*/
+/*-------------Themes----------------*/
+.theme h1
+{
+    font-size: 24px;
+    line-height: 28px;
+    color: #fff;
+    font-weight: 400;
+    text-align: center;
+    padding-top: 30px;
+
+}
+.theme .container
+{
+    width: 1000px;
+    margin: 5px auto 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.theme .container .box
+{
+    position: relative;
+    width: 270px;
+    height: 270px;
+    background: #191970;
+    margin: 10px;
+    box-sizing: border-box;
+    display: inline-block;
+
+}
+.theme .container .box .imgBx
+{
+    position: relative;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+}
+.theme .container .box .imgBx img
+{
+    min-width: 100%;
+    transition: transform 2s;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+.theme .container .box:hover .imgBx img
+{
+    transform: scale(1.2);
+}
+.theme .container .box .contentBx
+{
+    position: absolute;
+    top: 40px;
+    bottom: 40px;
+    right: 40px;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 4em;
-    color: rgba(255,255,255,.1);
-    border-radius: 50%;
-    z-index: -1;
-    opacity: 0;
-    font-weight: 900;
+    background: rgba(0,0,0,0.95);
+}
+.theme .container .box .details
+{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    bottom: 10px;
+    right: 10px;
+    background: rgba(0,0,0,0.8);
+    transform: scaleY(0);
+    transition: transform .5s;
+}
+.theme .container .box:hover .details
+{
+    transform: scaleY(1);
+}
+.theme .container .box .details .content
+{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    padding: 15px;
+    color: #fff;
+}
+.theme .container .box .details .content h2
+{
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    color: #fff;
+}
+.theme .container .box .details .content p
+{
+    margin: 10px 0 0;
+    padding: 0;
+}
+/*------------------------ Themes ------------------------*/
+/*-----------------Schedule-----------*/
+.schedule
+{
+    width: 100%;
+    height: 100vh;
+    background: url(Schedule.jpg);
+    background-size: cover;
+
+}
+.schedule .leftBox
+{
+    width: 40%;
+    height: 100%;
+    float: left;
+    padding: 40px;
+    box-sizing: border-box;
+}
+.schedule .leftBox .content
+{
+    color: #fff;
+    background: rgba(0,0,0,.5);
+    padding: 40px;
+    transition: .5s;
+}
+.schedule .leftBox .content:hover
+{
+    background: #e91e63;
+}
+.schedule .leftBox .content h1
+{
+    margin: 0;
+    padding: 0;
+    font-size: 50px;
     text-transform: uppercase;
-    letter-spacing: 500px;
-    transition: letter-spacing 0.5s,left 0.5s;
-  }
-  .page-menu li a:hover:before
-  {
-    content: attr(data-text);
-    opacity: 1;
+}
+.schedule .leftBox .content p
+{
+    margin: 10px 0 0;
+    padding: 0;
+}
+.schedule .event
+{
+    position: relative;
+    width: 60%;
+    height: 100%;
+    background: rgba(0,0,0,.5);
+    float: right;
+    box-sizing: border-box;
+}
+.schedule .event ul
+{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0;
+    padding: 40px;
+    box-sizing: border-box;
+}
+.schedule .event ul li
+{
+    list-style: none;
+    background: #fff;
+    box-sizing: border-box;
+    height: 150px;
+    margin: 15px 0;
+}
+.schedule .event ul li .time
+{
+    position: relative;
+    padding: 20px;
+    background: #262626;
+    box-sizing: border-box;
+    width: 30%;
+    height: 100%;
+    float: left;
+    text-align: center;
+    transition: .5s;
+}
+.schedule .event ul li:hover .time
+{
+    background: #e91e63;
+}
+.schedule .event ul li .time h3
+{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    top: 50%;
     left: 50%;
-    letter-spacing: 10px;
-    width: 1600px;
-    height: 1600px;
-  }
-  .page-menu li:nth-child(6n+1) a:before
-  {
-    background: #81ecec;
-  }
-  .page-menu li:nth-child(6n+2) a:before
-  {
-    background: #ff7675;
-  }
-  .page-menu li:nth-child(6n+3) a:before
-  {
-    background: #55efc4;
-  }
-  .page-menu li:nth-child(6n+4) a:before
-  {
-    background: #a29bfe;
-  }
-  .page-menu li:nth-child(6n+5) a:before
-  {
-    background: #fd79a8;
-  }
-  .page-menu li:nth-child(6n+6) a:before
-  {
-    background: #ffeaa7;
-  }
+    transform: translate(-50%,-50%);
+    color: #fff;
+    font-size: 40px;
+    line-height: 30px;
+}
+.schedule .event ul li .details
+{
+    padding: 20px;
+    background: #fff;
+    box-sizing: border-box;
+    width: 70%;
+    height: 100%;
+    float: left;
+}
+.schedule .event ul li .details h3
+{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    font-size: 22px;
+}
+.schedule .event ul li .details p
+{
+    position: relative;
+    margin:10px 0 0;
+    padding: 0;
+    font-size: 16px;
+}
+.schedule .event ul li .details a
+{
+    display: inline-block;
+    text-decoration: none;
+    padding: 7px 14px;
+    border: #262626;
+    margin-top: 10px;
+    font-size: 7px;
+    transition: .5s;
 
-  .social img {
-      width: 15px;
-  }
+}
+.schedule .event ul li .details a:hover
+{
+    background: #e91e63;
+    color: #fff;
+    border-color: #e91e63;
+}
+/*------------------------ Schedule ------------------------*/
+/*------------ABOUT Start-------------*/
+.end
+{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-wrap: wrap;
+    min-height: 100vh;
+}
+.box1
+{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px;
+    background: #060c21;
+    transition: 0.5s;
+}
+.box1:hover
+{
+    height: 400px;
+}
+.box1 .imgBx1
+{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.box1 .imgBx1 img
+{
+    max-width: 100%;
+    opacity: 0.1;
+    transition: 0.5s;
+}
+.box1:hover .imgBx1 img
+{
+    opacity: 1;
+}
+.box1:before
+{
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: #fff;
+    z-index: -1;
+}
+.box1:after
+{
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: #fff;
+    z-index: -2;
+    filter: blur(40px);
+}
+.box1:before,
+.box1:after
+{
+    background: linear-gradient(235deg,#772aff,#010615,#2196F3);
 
-  .main .social {
-      margin-top: 30px;
-      background:rgba(0,0,0,0.3);
-  }
+}
+.box1:nth-child(2):before,
+.box1:nth-child(2):after
+{
+    background: linear-gradient(235deg,#772aff,#010615,#2196F3);
 
-  .social a {
-      margin-right: 20px;
-  }
+}
+.box1:nth-child(3):before,
+.box1:nth-child(3):after
+{
+    background: linear-gradient(235deg,#772aff,#010615,#2196F3);
 
-  .social a:hover img {
-      opacity: .6;
-      transition: all ease 0.3s;
-  }
+}
+.box1 .content1
+{
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    height: 90px;
+    background: rgba(0,0,0,0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    opacity: 0;
+    transition: 0.5s;
+}
+.box1:hover .content1
+{
+    opacity: 1;
+}
+.box1 .content1 h2
+{
+    font-size: 20px;
+    color: #fff;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 1px;
+}
+.box1 .content1 h2 span
+{
+    font-size: 14px;
+    color: #fff;
+    font-weight: 200;
+    letter-spacing: 2px;
+}
+/*------------------------ About end ------------------------*/
+/*------------------------ Glimpse ------------------------*/
+.glimpse h1
+{
+    font-size: 24px;
+    line-height: 28px;
+    color: #fff;
+    font-weight: 400;
+    text-align: center;
+    padding-top: 30px;
+}
+.glimpse .box
+{
+    width: 1200px;
+    display: table-cell;
+    margin: 0 auto;
+}
+.glimpse .card
+{
+    position: relative;
+    width: 270px;
+    height: 270px;
+    background: #fff;
+    margin: 0 auto;
+    border-radius: 4px;
+    box-shadow: 0 2px 10px rgba(0,0,0,.2);
+}
+.glimpse .card:before,
+.glimpse .card:after
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    background: #fff;
+    transition: 0.5s;
+    z-index: -1;
+}
+.glimpse .card:hover:before
+{
+    transform: rotate(20deg);
+    box-shadow: 0 2px 20px rgba(0,0,0,.2);
+}
+.glimpse .card:hover:after
+{
+    transform: rotate(10deg);
+    box-shadow: 0 2px 20px rgba(0,0,0,.2);
+}
+.glimpse .card .imgBx
+{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    bottom: 10px;
+    right: 10px;
+    background: #222;
+    transition: 0.5s;
+    z-index: 1;
+}
+.glimpse .card:hover .imgBx
+{
+    bottom: 80px;
+}
+.glimpse .card .imgBx img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.glimpse .card .details
+{
+    position: absolute;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    height: 60px;
+    text-align: center;
+}
+.glimpse .card .details h2
+{
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+    font-size: 20px;
+    color: #777;
+    text-transform: uppercase;
+}
+/*------------------------ Glimpse ------------------------*/
+/*------------------------ Sponsor ------------------------*/
+.sponsor body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #131313;
+}
+.sponsor h1
+{
+    font-size: 24px;
+    line-height: 28px;
+    color: #fff;
+    font-weight: 400;
+    text-align: center;
+    padding-top: 30px;
+}
+.sponsor .container
+{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-right: 50px;
+    padding-left: 20px;
+}
+.sponsor .container .card
+{
+    position: relative;
+    width: 150px;
+    height: 200px;
+    background: #232323;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 10px;
+}
+.sponsor .container .card:before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #9bdc28;
+    clip-path: circle(100px at 80% 20%);
+    transition: 0.5s ease-in-out;
+}
+.sponsor .container .card:hover:before
+{
+    clip-path: circle(50px at 80% -20%);
+}
+.sponsor .container .card:after
+{
+    content: 'Name Of Sponser';
+    position: relative;
+    top: 70%;
+    left: 10%;
+    font-size: 15px;
+    font-weight: 100;
+    font-style: italic;
+    color: rgba(255,255,255,0.08);
+}
+.sponsor .container .card .imgBx
+{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1000;
+    width: 100%;
+    height: 150px;
+    transition: 0.5s;
+}
+.sponsor .container .card:hover .imgBx
+{
+    top: 0%;
+    transform: translateY(0%);
+}
+.sponsor .container .card .imgBx img
+{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100px;
+    height: 80px;
+}
+.sponsor .container .card .contentBx
+{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    transition: 1s;
+    z-index: 0;
+}
+.sponsor .container .card .contentBx h2
+{
+    position: relative;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    padding-top: 0px;
+    color: #fff;
+    opacity: 0;
+    visibility: hidden;
+}
+.sponsor .container .card .contentBx .details
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-  .social a:last-child {
-      margin-right: 0px;
-  }
+    transition: 0.5s;
+    opacity: 0;
+    visibility: hidden;
+}
+.sponsor .container .card:hover .contentBx .details,
+.sponsor .container .card:hover .contentBx h2
+{
+    opacity: 1;
+    visibility: visible;
+}
+.sponsor .container .card .contentBx .details h3
+{
+    color: #fff;
+    font-weight: 300;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-right: 10px;
+}
+.sponsor .container .card .contentBx .details span
+{
+    width: 26px;
+    height: 26px;
+    text-align: center;
+    line-height: 26px;
+    font-size: 14px;
+    color: #fff;
+    margin: 0 5px;
+    transition: 0.5s;
+}
+.sponsor .container .card .contentBx .details span a
+{
+    color:#fff;
+}
+/*------------------------ Sponsor ------------------------*/
+/*------------------------ FAQ ------------------------*/
+.FAQ
+{
 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+}
+.FAQ h1
+{
+    font-size: 24px;
+    line-height: 28px;
+    color: #fff;
+    font-weight: 400;
+    text-align: center;
+}
+.container2
+{
+    width: 100%;
+    max-width: 80rem;
+    margin: 0 ;
+    padding: 0 0.5rem;
+}
+.accordion-item
+{
+    background-color: #283042;
+    border-radius: .4rem;
+    margin-bottom: 1rem;
+    padding: .5rem;
+    box-shadow: .5rem 1px .5rem rgba(0,0,0,.1);
+}
+.accordion-link
+{
+    font-size: 15px;
+    color: rgba(255,255,255,.8);
+    text-decoration: none;
+    background-color: #283042;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.accordion-link ion-icon
+{
+    color:#e7d5ff;
+    padding: .5rem;
+}
 
+.accordion-link .ion-md-remove
+{
+    display: none;
+}
+.answer
+{
+    max-height: 0;
+    overflow: hidden;
+    position: relative;
+    background-color: #212838;
+    transition: max-height 650ms;
+}
+.answer::before
+{
+    content: "";
+    position: absolute;
+    width: .6rem;
+    height: 90%;
+    background-color: #8fc460;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+.answer p
+{
+    color: rgba(255,255,255,.6);
+    font-size: 13px;
+    padding: 1rem;
+}
+.accordion-item:target .answer
+{
+    max-height: 100px;
+}
+.accordion-item:target .accordion-link .ion-md-add
+{
+    display: none;
+}
+.accordion-item:target .accordion-link .ion-md-remove
+{
+    display: block;
+}
+/*------------------------ FAQ ------------------------*/
+/*------------------------ Footer ------------------------*/
+footer {
+    background: rgba(0, 0, 0, 0.815);
+    overflow-x: hidden;
+    padding: 14vmin 18vmin;
+}
 
+footer p>span {
+    color: #ff512f;
+}
 
-  header {
-      position: fixed;
-      padding: 30px;
-      top: 0;
-      width: 100%;
-      z-index: 2;
-  }
-  .ion {
-      top: 0;
-      left: 0;
-  }
-  .nav-icon {
-      width: 23px;
-      height: 18px;
-      position: relative;
-      transform: rotate(0deg);
-      transition: .5s ease-in-out;
-      cursor: pointer;
-      margin-top: 7px;
-  }
+footer input {
+    border: none !important;
+}
 
-  .nav-icon span {
-      display: block;
-      position: absolute;
-      height: 2px;
-      width: 100%;
-      background: #fff;
-      opacity: 1;
-      transform: rotate(0deg);
-      transition: .25s ease-in-out;
-  }
+footer input::placeholder {
+    color: white !important;
+}
 
-  .nav-icon span:nth-child(1) .icon{
-      top: 0px;
-      left: 0;
-      transform-origin: lright center;
-  }
+footer .input-group .input-group-text {
+    background: var(--bggradient);
+    border: none;
+}
 
-  .nav-icon span:nth-child(2) {
-      top: 6px;
-      transform-origin: right center;
-  }
+footer .column i {
+    color: #dd2476;
+}
 
-  .nav-icon span:nth-child(3) {
-      top: 12px;
-      transform-origin: right center;
-      right: 0;
-  }
+.last a {
+    padding-right: 5%;
+}
 
-  .nav-icon:hover span:nth-child(3) {
-      width: 100%;
-  }
-  /*-------------Themes----------------*/
-  .mid h1
-  {
-      font-size: 24px;
-      line-height: 28px;
-      color: #fff;
-      font-weight: 400;
-      text-align: center;
-      padding-top: 30px;
-
-  }
-  .mid .container
-  {
-      width: 1000px;
-      margin: 5px auto 0;
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-  }
-  .mid .container .box
-  {
-      position: relative;
-      width: 270px;
-      height: 270px;
-      background: #191970;
-      margin: 10px;
-      box-sizing: border-box;
-      display: inline-block;
-
-  }
-  .mid .container .box .imgBx
-  {
-      position: relative;
-      overflow: hidden;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-
-  }
-  .mid .container .box .imgBx img
-  {
-      min-width: 100%;
-      transition: transform 2s;
-      height: 100%;
-      width: 100%;
-      top: 0;
-      left: 0;
-  }
-  .mid .container .box:hover .imgBx img
-  {
-      transform: scale(1.2);
-  }
-  .mid .container .box .contentBx
-  {
-      position: absolute;
-      top: 40px;
-      bottom: 40px;
-      right: 40px;
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background: rgba(0,0,0,0.95);
-  }
-  .mid .container .box .details
-  {
-      position: absolute;
-      top: 10px;
-      left: 10px;
-      bottom: 10px;
-      right: 10px;
-      background: rgba(0,0,0,0.8);
-      transform: scaleY(0);
-      transition: transform .5s;
-  }
-  .mid .container .box:hover .details
-  {
-      transform: scaleY(1);
-  }
-  .mid .container .box .details .content
-  {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      text-align: center;
-      padding: 15px;
-      color: #fff;
-  }
-  .mid .container .box .details .content h2
-  {
-      margin: 0;
-      padding: 0;
-      font-size: 20px;
-      color: #fff;
-  }
-  .mid .container .box .details .content p
-  {
-      margin: 10px 0 0;
-      padding: 0;
-  }
-  /*-----------------Schedule-----------*/
-  .schedule
-  {
-      width: 100%;
-      height: 100vh;
-      background: url(Schedule.jpg);
-      background-size: cover;
-
-  }
-  .schedule .leftBox
-  {
-      width: 40%;
-      height: 100%;
-      float: left;
-      padding: 40px;
-      box-sizing: border-box;
-  }
-  .schedule .leftBox .content
-  {
-      color: #fff;
-      background: rgba(0,0,0,.5);
-      padding: 40px;
-      transition: .5s;
-  }
-  .schedule .leftBox .content:hover
-  {
-      background: #e91e63;
-  }
-  .schedule .leftBox .content h1
-  {
-      margin: 0;
-      padding: 0;
-      font-size: 50px;
-      text-transform: uppercase;
-  }
-  .schedule .leftBox .content p
-  {
-      margin: 10px 0 0;
-      padding: 0;
-  }
-  .schedule .event
-  {
-      position: relative;
-      width: 60%;
-      height: 100%;
-      background: rgba(0,0,0,.5);
-      float: right;
-      box-sizing: border-box;
-  }
-  .schedule .event ul
-  {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      margin: 0;
-      padding: 40px;
-      box-sizing: border-box;
-  }
-  .schedule .event ul li
-  {
-      list-style: none;
-      background: #fff;
-      box-sizing: border-box;
-      height: 150px;
-      margin: 15px 0;
-  }
-  .schedule .event ul li .time
-  {
-      position: relative;
-      padding: 20px;
-      background: #262626;
-      box-sizing: border-box;
-      width: 30%;
-      height: 100%;
-      float: left;
-      text-align: center;
-      transition: .5s;
-  }
-  .schedule .event ul li:hover .time
-  {
-      background: #e91e63;
-  }
-  .schedule .event ul li .time h3
-  {
-      position: absolute;
-      margin: 0;
-      padding: 0;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%,-50%);
-      color: #fff;
-      font-size: 40px;
-      line-height: 30px;
-  }
-  .schedule .event ul li .details
-  {
-      padding: 20px;
-      background: #fff;
-      box-sizing: border-box;
-      width: 70%;
-      height: 100%;
-      float: left;
-  }
-  .schedule .event ul li .details h3
-  {
-      position: relative;
-      margin: 0;
-      padding: 0;
-      font-size: 22px;
-  }
-  .schedule .event ul li .details p
-  {
-      position: relative;
-      margin:10px 0 0;
-      padding: 0;
-      font-size: 16px;
-  }
-  .schedule .event ul li .details a
-  {
-      display: inline-block;
-      text-decoration: none;
-      padding: 7px 14px;
-      border: #262626;
-      margin-top: 10px;
-      font-size: 7px;
-      transition: .5s;
-
-  }
-  .schedule .event ul li .details a:hover
-  {
-      background: #e91e63;
-      color: #fff;
-      border-color: #e91e63;
-  }
-  .end
-  {
-      display: flex;
-      justify-content: center;
-      align-items:center;
-      flex-wrap: wrap;
-      min-height: 100vh;
-  }
-  .box1
-  {
-      position: relative;
-      width: 300px;
-      height: 300px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin: 40px;
-      background: #060c21;
-      transition: 0.5s;
-  }
-  .box1:hover
-  {
-      height: 400px;
-  }
-  .box1 .imgBx1
-  {
-      position: relative;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      padding: 10px;
-      box-sizing: border-box;
-  }
-  .box1 .imgBx1 img
-  {
-      max-width: 100%;
-      opacity: 0.1;
-      transition: 0.5s;
-  }
-  .box1:hover .imgBx1 img
-  {
-      opacity: 1;
-  }
-  .box1:before
-  {
-      content: '';
-      position: absolute;
-      top: -2px;
-      left: -2px;
-      right: -2px;
-      bottom: -2px;
-      background: #fff;
-      z-index: -1;
-  }
-  .box1:after
-  {
-      content: '';
-      position: absolute;
-      top: -2px;
-      left: -2px;
-      right: -2px;
-      bottom: -2px;
-      background: #fff;
-      z-index: -2;
-      filter: blur(40px);
-  }
-  .box1:before,
-  .box1:after
-  {
-      background: linear-gradient(235deg,#772aff,#010615,#2196F3);
-
-  }
-  .box1:nth-child(2):before,
-  .box1:nth-child(2):after
-  {
-      background: linear-gradient(235deg,#772aff,#010615,#2196F3);
-
-  }
-  .box1:nth-child(3):before,
-  .box1:nth-child(3):after
-  {
-      background: linear-gradient(235deg,#772aff,#010615,#2196F3);
-
-  }
-  .box1 .content1
-  {
-      position: absolute;
-      bottom: 0;
-      left: 10px;
-      right: 10px;
-      bottom: 10px;
-      height: 90px;
-      background: rgba(0,0,0,0.4);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      opacity: 0;
-      transition: 0.5s;
-  }
-  .box1:hover .content1
-  {
-      opacity: 1;
-  }
-  .box1 .content1 h2
-  {
-      font-size: 20px;
-      color: #fff;
-      font-weight: 500;
-      line-height: 20px;
-      letter-spacing: 1px;
-  }
-  .box1 .content1 h2 span
-  {
-      font-size: 14px;
-      color: #fff;
-      font-weight: 200;
-      letter-spacing: 2px;
-  }
-  .FAQ
-  {
-      background-color:#060c21;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding-top: 50px;
-  }
-  .FAQ h1
-  {
-      font-size: 24px;
-      line-height: 28px;
-      color: #fff;
-      font-weight: 400;
-      text-align: center;
-  }
-  .container2
-  {
-      width: 100%;
-      max-width: 80rem;
-      margin: 0 auto;
-      padding: 0 1.5rem;
-  }
-  .accordion-item
-  {
-      background-color: #283042;
-      border-radius: .4rem;
-      margin-bottom: 1rem;
-      padding: 1rem;
-      box-shadow: .5rem 1px .5rem rgba(0,0,0,.1);
-  }
-  .accordion-link
-  {
-      font-size: 15px;
-      color: rgba(255,255,255,.8);
-      text-decoration: none;
-      background-color: #283042;
-      width: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 1rem 0;
-  }
-  .accordion-link ion-icon
-  {
-      color:#e7d5ff;
-      padding: .5rem;
-  }
-
-  .accordion-link .ion-md-remove
-  {
-      display: none;
-  }
-  .answer
-  {
-      /*max-height: 0;
-      overflow: hidden;*/
-      position: relative;
-      background-color: #212838;
-      transition: max-height 650ms;
-  }
-  .answer::before
-  {
-      content: "";
-      position: absolute;
-      width: .6rem;
-      height: 90%;
-      background-color: #8fc460;
-      top: 50%;
-      left: 0;
-      transform: translateY(-50%);
-  }
-  .answer p
-  {
-      color: rgba(255,255,255,.6);
-      font-size: 15px;
-      padding: 2rem;
-  }
-  .accordion-item:target .answer
-  {
-      max-height: 20px;
-  }
-  .accordion-item:target .accordion-link .ion-md-add
-  {
-      display: none;
-  }
-  .accordion-item:target .accordion-link .ion-md-remove
-  {
-      display: block;
-  }
-
+.my_name {
+    color: whitesmoke;
+    padding-top: 3%;
+    bottom: 0%;
+}
+/*------------------------ Footer ------------------------*/
 </style>

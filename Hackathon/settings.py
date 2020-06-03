@@ -24,8 +24,9 @@ SECRET_KEY = '8hop3v^5n_=$i@^)%kg(u4lgcb9a7u&9ttq3tm5sapli9vmgfx'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
+ALLOWED_HOSTS = ['*', 'localhost', '127.0.0.1']
 
-ALLOWED_HOSTS = []
+
 
 
 # Application definition
@@ -38,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'hackinfo2',
+    # 'hackinfo',
     'participants',
 ]
 

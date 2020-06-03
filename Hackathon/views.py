@@ -9,12 +9,6 @@ from hackinfo2.models import Organiser, Userdata
 def home(request):
     return render(request, 'Hackathon/home.html' )
 
-def signup(request):
-    return render(request, 'Hackathon/signup.html' )
-
-# def login(request):
-#     return render(request, 'Hackathon/login.html' )
-
 def login(request):
     if request.method == 'POST':
         if request.POST['username'] and request.POST['password']:
@@ -51,7 +45,4 @@ def login1(request):
 def logout(request):
     # if request.method == 'POST':
     #     auth.logout(request)
-        return render(request, 'clg/home.html')
-
-def book(request):
-    return render(request, 'clg/book.html')
+        return render(request, 'Hackathon/home.html')
